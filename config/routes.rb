@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  # for CANARIE routes
+  mount API::Base, at: "/"
+
   mount Blacklight::Engine => '/'
   root to: "catalog#index"
   concern :searchable, Blacklight::Routes::Searchable.new

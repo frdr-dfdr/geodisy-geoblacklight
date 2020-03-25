@@ -74,3 +74,9 @@ gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'jquery-rails'
 gem 'devise'
 gem 'devise-guests', '~> 0.6'
+
+# CANARIE metrics reporting by VM
+gem 'grape'
+gem 'grape-active_model_serializers'
+gem 'rack-cors'
+
