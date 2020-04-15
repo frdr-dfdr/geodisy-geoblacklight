@@ -24,6 +24,13 @@ module API
 	 </head>
          <body>
          <p>Name: Geodisy</p>
+         <p>Synopsis: Geodisy is a research data discovery tool that harvests information from existing research data repositories and displays applicable records onto a map-based search interface.</p>
+         <p>Version: 1.0</p>
+         <p>Institution: UBC</p>
+         <p>Release Time: 2020-03-20T13:00:00Z</p>
+         <p>Research Subject: Research data access and discovery</p>
+         <p>Support Email: geodisy.info@ubc.ca</p>
+         <p>Tags: Metadata</p>
          </body>
          </html>
 	"

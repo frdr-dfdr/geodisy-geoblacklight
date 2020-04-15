@@ -16,3 +16,9 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( favicon.ico )
 
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'images')
+
+Rails.application.config.assets.precompile += %w( ubc.png )
+
+Rails.application.config.assets.precompile += %w( canarie.png )
+
+Rails.application.config.assets.precompile += %w( frdr.png )
