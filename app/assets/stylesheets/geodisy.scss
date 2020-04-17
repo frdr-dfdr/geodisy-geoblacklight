@@ -1,0 +1,11 @@
+@import 'bootstrap';
+@import 'geodisy/geo_footer';
+
+$logo-image: image_url('blacklight/geodisy.svg') !default
+
+.navbar-logo {  /* The main logo image for the Blacklight instance */
+  @if $logo-image {
+    background: transparent $logo-image no-repeat top left;
+  }
+}
+
