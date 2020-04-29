@@ -11,10 +11,16 @@ $logo-image: image_url('blacklight/geodisy.svg') !default
 }
 
 #beta{
-	padding-left:21%;
-	padding-right:20%;
+	padding-left:10%;
+	padding-right:10%;
 }
 
 #betawarning{
  color:red;
+}
+
+#map_instructions{
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2px;
 }
