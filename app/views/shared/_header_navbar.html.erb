@@ -1,44 +1,47 @@
 <%= render_aria_labels(@aria_labels) %>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark topbar" role="navigation">
+    <div style="padding-bottom:0.5rem">
+        <%= link_to 'https://www.frdr.ca/' do %>
+            <%= image_tag "frdr.png", alt: "Federated Research Data Repository", height: 45 %>
+        <% end %>
+    </div>
+    
     <div class="<%= container_classes %>">
-	<div id=logos>
-           <%= link_to 'https://www.frdr.ca/' do %>
-              <%= image_tag "frdr.png", alt: "Federated Research Data Repository", height: 45 %>
-           <% end %>
-           <%= link_to application_name, root_path, class: 'mb-0 mt-1 navbar-brand navbar-logo' %>
-        </div>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#user-util-collapse" aria-controls="user-util-collapse" aria-expanded="false" aria-label="Toggle navigation">      
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <%= link_to application_name, root_path, class: 'mb-0 mt-1 navbar-brand navbar-logo' %>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#user-util-collapse" aria-controls="user-util-collapse" aria-expanded="false" aria-label="Toggle navigation">      
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse justify-content-md-end" id="user-util-collapse">
-      <%= render 'shared/user_util_links' %>
-    </div>
-  </div>
-</nav>
-<% if controller_name == 'catalog' && (has_search_parameters? || params[:action] == 'show') %>
-  <div class="navbar-search navbar navbar-light bg-faded" role="navigation">
-    <div class="<%= container_classes %> stuff">
-      <%= render_search_bar  %>
-    </div>
-  </div>
-<% else %>
-   <div id="beta"><span id="beta_warning">Important</span>: Geodisy provides map search functionality to supplement the FRDR discovery service. Currently in beta, the map search only indexes selected datasets from Scholars Portal Dataverse with location metadata and/or geospatial files. Geodisy is only available in English at this time. To search all datasets, return to  <a href="https://frdr-dfdr.ca">frdr-dfdr.ca</a>.</div>
-  <div class='geobl-homepage-masthead jumbotron' style="padding-top:1rem; padding-bottom:1.5rem">
-    <div class='d-flex justify-content-center'>
-      <%= content_tag :h2, t('geoblacklight.home.headline'), class: 'text-center' %>
-    </div>
-    <div class='d-flex justify-content-center'>
-      <%= content_tag :h3, t('geoblacklight.home.search_heading'), class: 'text-center' %>
-    </div>
-    <div class='row justify-content-md-center'>
-      <div class='col-md-6 col-sm-12'>
-        <div class='navbar-search'>
-          <%= render_search_bar %>
+        <div class="collapse navbar-collapse justify-content-md-end" id="user-util-collapse">
+            <%= render 'shared/user_util_links' %>
         </div>
-      </div>
     </div>
-  </div>
+</nav>
+
+<% if controller_name == 'catalog' && (has_search_parameters? || params[:action] == 'show') %>
+    <div class="navbar-search navbar navbar-light bg-faded" role="navigation">
+        <div class="<%= container_classes %> stuff">
+            <%= render_search_bar  %>
+        </div>
+    </div>
+
+<% else %>
+    <div id="beta"><span id="beta_warning">Important</span>: Geodisy provides map search functionality to supplement the FRDR discovery service. Currently in beta, the map search only indexes selected datasets from Scholars Portal Dataverse with location metadata and/or geospatial files. Geodisy is only available in English at this time. To search all datasets, return to  <a href="https://frdr-dfdr.ca">frdr-dfdr.ca</a>.</div>
+        <div class='geobl-homepage-masthead jumbotron' style="padding-top:1rem; padding-bottom:1.5rem">
+            <div class='d-flex justify-content-center'>
+                <%= content_tag :h2, t('geoblacklight.home.headline'), class: 'text-center' %>
+            </div>
+        <div class='d-flex justify-content-center'>
+            <%= content_tag :h3, t('geoblacklight.home.search_heading'), class: 'text-center' %>
+        </div>
+        <div class='row justify-content-md-center'>
+            <div class='col-md-6 col-sm-12'>
+                <div class='navbar-search'>
+                    <%= render_search_bar %>
+                </div>
+            </div>
+        </div>
+    </div>
 <% end %>
 
