@@ -13,7 +13,7 @@
     </div>
   <% end %>
 
-  #<% if document.download_types.present? %>
+ # <% if document.download_types.present? %>
   #  <div class="card exports">
   #    <div class="card-header">
   #
@@ -24,7 +24,7 @@
   #      <%= render 'downloads_generated' %>
   #    </ul>
   #  </div>
-  #<% end %>
+ # <% end %>
 <% elsif document.restricted? && document.same_institution? %>
   <div class="card authentication">
     <div class="card-header">
