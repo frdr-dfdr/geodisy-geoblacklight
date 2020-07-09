@@ -7,7 +7,6 @@ GeoBlacklight.Viewer.Map = GeoBlacklight.Viewer.extend({
     * Initial bounds of map
     * @type {L.LatLngBounds}
     */
-    bbox: [[-74.78, -142], [41, -53.558]],
     opacity: 0.75
   },
 
@@ -17,7 +16,7 @@ GeoBlacklight.Viewer.Map = GeoBlacklight.Viewer.extend({
     if (this.data.mapBbox) {
       this.options.bbox = L.bboxToBounds(this.data.mapBbox);
     }
-    this.map = L.map(this.element).setView([-41.2858, 174.78682], 14);
+    this.map = L.map(this.element).setView([41.2858, 174.78682], 14);
 
     // Add initial bbox to map element for easier testing
     if (this.map.getBounds().isValid()) {
