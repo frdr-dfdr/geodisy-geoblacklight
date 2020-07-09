@@ -1,3 +1,7 @@
 en:
   blacklight:
     application_name: 'Geodisy'
+    form:
+      search:
+        label: 'search for'
+        placeholder: 'Search by keywords...'
