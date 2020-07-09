@@ -20,9 +20,9 @@ en:
       export_geojson_link: 'GeoJSON'
     home:
       headline: 'Explore Canadian research data'
-      search_heading: 'Browse by keyword'
-      category_heading: 'Browse by category'
-      map_heading: 'Browse by location'
+      search_heading: 'Search by keyword'
+      category_heading: 'Search by category'
+      map_heading: 'Search by location'
       institution: 'Institution'
       data_type: 'Data type'
       placename: 'Placename'
