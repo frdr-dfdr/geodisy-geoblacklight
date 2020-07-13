@@ -28,3 +28,8 @@ $logo-image: image_url('blacklight/geodisy.svg') !default
  margin-left: -1px;
  padding-top: 3px;
  }
+
+ .blacklight-dc_description_s {
+   white-space: pre-line;
+ }
+
