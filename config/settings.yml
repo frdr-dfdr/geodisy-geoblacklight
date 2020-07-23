@@ -14,7 +14,7 @@ CARTO_ONECLICK_LINK: 'http://oneclick.carto.com/'
 ARCGIS_BASE_URL: 'https://www.arcgis.com/home/webmap/viewer.html'
 
 # Download path can be configured using this setting
-#DOWNLOAD_PATH: "./tmp/cache/downloads"
+DOWNLOAD_PATH: "./tmp/cache/downloads"
 
 # DEPRECATED Main Solr geometry field used for spatial search and bounding box. Should be type 'rpt'
 GEOMETRY_FIELD: 'solr_geom'
@@ -46,7 +46,7 @@ FIELDS:
   :SOURCE: 'dc_source_sm'
 
 # Institution deployed at
-INSTITUTION: 'Stanford'
+INSTITUTION: 'FRDR'
 
 # Metadata shown in tool panel
 METADATA_SHOWN:
