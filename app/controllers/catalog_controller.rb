@@ -254,7 +254,7 @@ class CatalogController < ApplicationController
     # 'flatBlue'
     # 'midnightCommander'
 
-    config.basemap_provider = 'Esri_WorldStreetMap'
+    config.basemap_provider = 'Esri_WorldTopoMap'
 
     # Configuration for autocomplete suggestor
     config.autocomplete_enabled = true
