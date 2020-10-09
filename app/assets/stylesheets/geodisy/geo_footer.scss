@@ -81,4 +81,15 @@
    color: #0A0A0A;
 }
 
+a#link:link {
+    color: #3344dd;
+}
+
+a#link:hover a#link:focus a#link:active {
+    color: #bb1122;
+}
+
+a#link:visited{
+    color: #884488;
+}
 
