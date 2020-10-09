@@ -33,12 +33,13 @@ $logo-image: image_url('blacklight/geodisy.svg') !default
    white-space: pre-line;
  }
 
- .nav-link.navbar-link{
- color: #FAFAFA;
+ a.nav-link.navbar-link{
+ color: #FAFAFA !important;
  }
 
- .nav-link.navbar-link:hover .nav-link.navbar-link:active{
+a.nav-link.navbar-link:hover {
+    color: #343a40 !important;
     background-color: #FAFAFA;
-    color:#343a40;
- }
-
+    text-decoration: underline;
+    border-radius: 5px 5px 5px 5px;
+}
