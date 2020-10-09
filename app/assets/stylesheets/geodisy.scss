@@ -37,14 +37,16 @@ a:link {
     color: #3344dd;
 }
 
+a:visited{
+    color: #884488;
+}
+
 a:hover, a:focus, a:active {
     color: #bb1122;
     text-decoration: underline;
 }
 
-a:visited{
-    color: #884488;
-}
+
 
  a.nav-link.navbar-link{
  color: #FAFAFA !important;
