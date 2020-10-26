@@ -33,3 +33,62 @@ $logo-image: image_url('blacklight/geodisy.svg') !default
    white-space: pre-line;
  }
 
+a:link {
+    color: #3344dd !important;
+}
+
+a:visited {
+    color: #884488 !important;
+}
+
+
+a:hover, a:focus, a:active {
+    color: #bb1122 !important;
+    text-decoration: underline !important;
+}
+
+a.btn.btn-primary {
+  color: white !important;
+}
+
+
+
+ a.nav-link.navbar-link{
+ color: #FAFAFA !important;
+ }
+
+a.nav-link.navbar-link:hover, a.nav-link.navbar-link:focus, a.nav-link.navbar-link:active {
+    color: #343a40 !important;
+    background-color: #FAFAFA;
+    text-decoration: underline;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.submit-search-text {
+  color: white !important;
+}
+
+.submit-search-text:hover {
+  text-decoration: underline !important;
+}
+.leaflet-control-zoom-in:hover, .leaflet-control-zoom-out:hover, .leaflet-control-zoom-in:focus, .leaflet-control-zoom-out:focus, .leaflet-control-zoom-in:active, .leaflet-con$
+    color: #3344dd !important;
+    text-decoration: none !important;
+}
+
+a.leaflet-control-zoom-in, a.leaflet-control-zoom-out{
+   color: black !important;
+}
+
+li.page-item {
+  color:#3344dd;
+}
+
+li.page-item.disabled{
+   color:grey !important;
+}
+
+a.page-link {
+ color: inherit !important;
+}
+
