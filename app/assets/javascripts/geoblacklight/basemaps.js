@@ -91,11 +91,11 @@ GeoBlacklight.Basemaps = {
       }
     ),
     Esri_WorldTopoMap: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-    	attribution: 'Tiles &copy; Esri et al. (1)',
-    	worldCopyJump: true,
-    	maxZoom: 16,
-    	retina: '@2x',
-        detectRetina: false
-      }
-    )
+            attribution: 'Tiles &copy; Esri et al. (1)',
+            worldCopyJump: true,
+            maxZoom: 16,
+            retina: '@2x',
+            detectRetina: false,
+          }
+        )
 };
