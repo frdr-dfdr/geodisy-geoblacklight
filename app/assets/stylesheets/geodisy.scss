@@ -92,3 +92,13 @@ a.page-link {
  color: inherit !important;
 }
 
+.card-header.p-0.facet-field-heading:hover, card.facet-limit.blacklight-dc_creator_sm:active, card.facet-limit.blacklight-dc_creator_sm:focus{
+  background:#212529;
+  color:#f7f7f7;
+}
+
+.btn.btn-block.p-2.text-left.collapse-toggle {
+  background: inherit;
+  color:inherit;
+}
+
