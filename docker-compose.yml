@@ -1,0 +1,75 @@
+version: '3'
+volumes:
+  solr_data_vol:
+  postgres_data_vol:
+  geoblacklight_data_vol:
+  geoserver_data_vol:
+
+networks:
+  geodisy:
+
+services:
+  geoblacklight:
+    image: gbl_postgres 
+    environment:
+      RAILS_ENV: production
+      RAILS_LOG_TO_STDOUT: "true"
+      SOLR_URL: http://solr:8983/solr/geoblacklight
+      GEOBLACKLIGHT_POSTGRES_USER: postgres
+      GEOBLACKLIGHT_POSTGRES_PASSWORD: postgres
+      GEOBLACKLIGHT_POSTGRES_HOST: db
+      GEOBLACKLIGHT_POSTGRES_PORT: 5432
+      SOLR_URL: http://solr:8983/solr/geoblacklight-core
+    volumes:
+      - geoblacklight_data_vol:/usr/src/app 
+        #- ./geoblacklight/start.sh:/usr/src/geoblacklight/start.sh
+    networks:
+      - geodisy
+    ports:
+      - "3001:3000"
+    depends_on:
+      - db
+      - solr
+      #- nginx
+
+  solr:
+    image: solr:8.3.0
+    volumes:
+      - solr_data_vol:/var/solr/data
+    networks:
+      - geodisy
+    ports:
+      - "8983:8983"
+  
+        #  geoserver:
+        #    image: kartoza/geoserver
+        #    environment:
+        #      - GEOSERVER_ADMIN_USER=admin
+        #      - GEOSERVER_ADMIN_PASSWORD=testpassword
+        #    volumes:
+        #      - geoserver_data_vol:/usr/local/tomcat/webapps/geoserver/data
+        #    networks:
+        #      - geodisy
+        #    ports:
+        #      - "8600:8080"
+  
+  db:
+    image: postgres:12
+    volumes:
+      - postgres_data_vol:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - geodisy
+  
+        #  nginx:
+        #    image: nginx
+        #    volumes:
+        #      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+        #    ports:
+        #      - "80:80"
+        #    networks:
+        #      - geodisy
