@@ -1,5 +1,5 @@
 # Ruby base image
-FROM ruby:2.6.5
+FROM ruby:2.7.2
 
 LABEL maintainer="joel.farthing@usask.ca"
 
@@ -14,17 +14,15 @@ RUN apt-get update \
 
 WORKDIR /usr/src
 
-COPY . /usr/src
-
-WORKDIR /usr/src
-
-## Add postgres gem
-#RUN echo "\ngem 'pg'" >> Gemfile
+COPY ./Gemfile /usr/src/Gemfile
 
 RUN gem install bundler
 RUN bundle install
 
 RUN yarn install --check-files
+
+
+COPY . /usr/src
 
 # Add default env variable referencing our solr container
 # Depends on --link my_solr_container:solr
