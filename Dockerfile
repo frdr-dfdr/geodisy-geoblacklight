@@ -16,7 +16,7 @@ WORKDIR /usr/src
 
 COPY ./Gemfile /usr/src/Gemfile
 
-RUN gem install bundler -v 2.1.3
+RUN gem install bundler -v 2.2.0.rc.2
 RUN bundle install
 
 RUN yarn install --check-files
