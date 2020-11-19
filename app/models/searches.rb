@@ -1,4 +1,4 @@
-$db = SQLite3::Database.open "/var/www/geoblacklight/geodisy/db/#{Rails.env}.sqlite3"
+#$db = SQLite3::Database.open "/var/www/geoblacklight/geodisy/db/#{Rails.env}.sqlite3"
 
 class Searches < ApplicationRecord 
 
