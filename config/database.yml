@@ -8,11 +8,12 @@ default: &default
   adapter: postgresql
   encoding: unicode
   host: <%= ENV.fetch("GEOBLACKLIGHT_POSTGRES_HOST") %>
-  username: <%= ENV.fetch("GEOBLACKLIGHT_POSTGRES_USERNAME") %>
+  username: <%= ENV.fetch("GEOBLACKLIGHT_POSTGRES_USER") %>
   password: <%= ENV.fetch("GEOBLACKLIGHT_POSTGRES_PASSWORD") %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  port: 5432
+  port: <%= ENV.fetch("GEOBLACKLIGHT_POSTGRES_PORT") %>
+
 
 development:
   <<: *default
