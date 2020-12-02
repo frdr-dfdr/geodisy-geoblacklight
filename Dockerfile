@@ -21,11 +21,9 @@ RUN bundle install
 
 RUN yarn install --check-files
 
-
 COPY . /usr/src
 
 # Add default env variable referencing our solr container
-# Depends on --link my_solr_container:solr
 ENV SOLR_URL=http://solr:8983/solr/geoblacklight
 ENV RAILS_ENV=development
 ENV RAILS_SERVE_STATIC_FILES=false
@@ -33,8 +31,6 @@ ENV GEOBLACKLIGHT_POSTGRES_USER=postgres
 ENV GEOBLACKLIGHT_POSTGRES_PASSWORD=postgres
 ENV GEOBLACKLIGHT_POSTGRES_HOST=db
 ENV GEOBLACKLIGHT_POSTGRES_PORT=5432
-
-#VOLUME ["/usr/src/geoblacklight/tmp"]
 
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
