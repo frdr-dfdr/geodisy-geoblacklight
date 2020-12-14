@@ -1,9 +1,10 @@
 version: '3'
 volumes:
   solr_data_vol:
-  postgres_data_vol:
+  db_data_vol:
   geoblacklight_data_vol:
   geoserver_data_vol:
+  postgis_data_vol:
 
 services:
   geoblacklight:
@@ -26,6 +27,13 @@ services:
       - db
       - solr
 
+        #  geocombine:
+        #    build: 
+        #      context: .
+        #      dockerfile: Dockerfile.geocombine
+        #    environment:
+        #      SOLR_URL: http://solr:8983/solr/geoblacklight
+
   solr:
     build:
       context: .
@@ -34,29 +42,37 @@ services:
       - solr_data_vol:/var/solr/data
     ports:
       - "8983:8983"
-  
-        #  geoserver:
-        #    image: kartoza/geoserver
-        #    environment:
-        #      - GEOSERVER_ADMIN_USER=admin
-        #      - GEOSERVER_ADMIN_PASSWORD=testpassword
-        #    volumes:
-        #      - geoserver_data_vol:/usr/local/tomcat/webapps/geoserver/data
-        #    networks:
-        #      - geodisy
-        #    ports:
-        #      - "8600:8080"
-  
+
   db:
     image: postgres:12
     volumes:
-      - postgres_data_vol:/var/lib/postgresql/data
+      - db_data_vol:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
 
+  geoserver:
+    image: kartoza/geoserver
+    environment:
+      - GEOSERVER_ADMIN_USER=admin
+      - GEOSERVER_ADMIN_PASSWORD=testpassword
+      - STABLE_EXTENSIONS=importer-plugin
+    volumes:
+      - geoserver_data_vol:/opt/geoserver/data_dir
+    ports:
+      - "8600:8080"
+  
+  postgis:
+    image: kartoza/postgis
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASS: postgres
+      POSTGRES_DB: vectordata
+    volumes:
+      - postgis_data_vol:/var/lib/postgresql/data
+  
   nginx:
     image: nginx:1.19
     volumes:
