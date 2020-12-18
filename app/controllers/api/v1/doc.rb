@@ -33,7 +33,7 @@ module API
       resource :tryme do
         desc "Provide platform try me"
         get "" do
-                redirect "https://geo.frdr.ca", permanent: true
+                redirect "https://geo.frdr-dfdr.ca", permanent: true
                 content_type "text/html"
         end
       end
