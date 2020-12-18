@@ -4,12 +4,6 @@
 set -e
 
 ################################################################################
-# Compile the Rails assets at runtime. They will be shared in a volume with    #
-# the Nginx container                                                          #
-################################################################################
-bundle exec rake assets:precompile
-
-################################################################################
 # The steps below are taken from the Docker documentation page at :            #
 # https://docs.docker.com/compose/rails/  Dec 1, 2020                          #
 ################################################################################

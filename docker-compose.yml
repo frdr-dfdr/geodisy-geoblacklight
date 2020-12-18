@@ -3,6 +3,7 @@ volumes:
   solr_data_vol:
   db_data_vol:
   geoblacklight_data_vol:
+  geoblacklight_static_assets_vol:
   geoserver_data_vol:
   postgis_data_vol:
 
@@ -19,8 +20,8 @@ services:
       GEOBLACKLIGHT_POSTGRES_HOST: db
       GEOBLACKLIGHT_POSTGRES_PORT: 5432
     volumes:
-      - geoblacklight_data_vol:/usr/src/app 
-        #- ./geoblacklight/start.sh:/usr/src/geoblacklight/start.sh
+        #- geoblacklight_data_vol:/usr/src/app 
+      - geoblacklight_static_assets_vol:/usr/src/public/
     ports:
       - "3000:3000"
     depends_on:
@@ -78,6 +79,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/local.conf:/etc/nginx/conf.d/default.conf
+      - geoblacklight_static_assets_vol:/usr/share/nginx/html/geoblacklight/public/
     ports:
       - "80:80"
     depends_on:

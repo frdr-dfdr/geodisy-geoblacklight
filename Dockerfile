@@ -14,15 +14,6 @@ RUN apt-get update \
 
 WORKDIR /usr/src
 
-COPY ./Gemfile /usr/src/Gemfile
-
-RUN gem install bundler -v 2.2.0.rc.2
-RUN bundle install
-
-RUN yarn install --check-files
-
-COPY . /usr/src
-
 # Add default env variable referencing our solr container
 ENV SOLR_URL=http://solr:8983/solr/geoblacklight
 ENV RAILS_ENV=development
@@ -31,6 +22,16 @@ ENV GEOBLACKLIGHT_POSTGRES_USER=postgres
 ENV GEOBLACKLIGHT_POSTGRES_PASSWORD=postgres
 ENV GEOBLACKLIGHT_POSTGRES_HOST=db
 ENV GEOBLACKLIGHT_POSTGRES_PORT=5432
+
+COPY ./Gemfile /usr/src/Gemfile
+
+RUN gem install bundler -v 2.2.0.rc.2
+
+COPY . /usr/src
+RUN bundle install && \
+    bundle exec rake assets:precompile
+
+RUN yarn install --check-files
 
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
