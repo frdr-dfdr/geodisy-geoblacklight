@@ -21,7 +21,7 @@ services:
       GEOBLACKLIGHT_POSTGRES_PORT: 5432
     volumes:
         #- geoblacklight_data_vol:/usr/src/app 
-      - geoblacklight_static_assets_vol:/usr/src/public/
+      - geoblacklight_static_assets_vol:/usr/src/public
     ports:
       - "3000:3000"
     depends_on:
@@ -39,6 +39,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.solr
+    command:
+      - solr-precreate
+      - geoblacklight
+      - /opt/solr/server/solr/configsets/geoblacklight/conf
     volumes:
       - solr_data_vol:/var/solr/data
     ports:
