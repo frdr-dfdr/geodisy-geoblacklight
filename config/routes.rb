@@ -3,15 +3,24 @@ Rails.application.routes.draw do
   # for CANARIE routes
   mount API::Base, at: "/"
 
-  mount Blacklight::Engine => '/'
-  root to: "catalog#index"
-  concern :searchable, Blacklight::Routes::Searchable.new
 
-  resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
-    concerns :searchable
+  scope "(:locale)", locale: /en|fr/ do
+    mount Blacklight::Engine => '/'
+    root to: "catalog#index"
+    concern :searchable, Blacklight::Routes::Searchable.new
+
+    resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
+      concerns :searchable
+    end
+    devise_for :users
+    concern :exportable, Blacklight::Routes::Exportable.new
   end
-  devise_for :users
-  concern :exportable, Blacklight::Routes::Exportable.new
+
+  #resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
+  #  concerns :searchable
+  #end
+  #devise_for :users
+  #concern :exportable, Blacklight::Routes::Exportable.new
 
   resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
     concerns :exportable
