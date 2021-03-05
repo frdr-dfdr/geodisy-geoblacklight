@@ -1,4 +1,4 @@
-en:
+ca-fr:
   geoblacklight:
     bbox_label: 'Cadre englobant'
     download:
@@ -60,26 +60,26 @@ en:
       data_dictionary: 'Documentation'
       services: 'Services web'
       services_close: 'Fermer'
+    metadata:
+      view_metadata: 'Afficher les métadonnées'
+      more_details: 'Plus de détails à'
+      metadata_error: "L’affichage de métadonnées pour le schéma choisi n’est pas disponible"
+      metadata_trace: "Veuillez choisir un autre affichage de métadonnées. Autrement, essayez de télécharger le fichier ou communiquer avec l’établissement titulaire."
+    show:
+      attribute: 'Attribuer'
+      value: 'Valeur'
+      click_map: 'Cliquez sur la carte pour examiner les valeurs '
     relations:
       ancestor: 'Ensembles de données sources'
       descendant: 'Ensembles de données dérivés'
       browse_all: "Naviguer tous les enregistrements %{count}..."
       # Missing translation for title: 'Data Relations"
       title: 'Data Relations'
-    metadata:
-      view_metadata: 'Afficher les métadonnées'
-      more_details: 'Plus de détails à'
-      metadata_error: "L'affichage de métadonnées pour le schéma choisi n'est pas disponible"
-      metadata_trace: "Veuillez choisir un autre affichage de métadonnées. Autrement, essayez de télécharger le fichier ou communiquer avec l'établissement titulaire."
-    show:
-      attribute: 'Attribuer'
-      value: 'Valeur'
-      click_map: 'Cliquez sur la carte pour examiner les valeurs '
     help_text:
       viewer_protocol:
         dynamic_map_layer:
-        title: Couche de carte dynamique ArcGIS
-          content: Une couche de carte dynamique ArcGIS représente les données vectorielles (points, lignes et polygones). Les couches d'images de la carte sont des carreaux d'image à rendu dynamique.
+          title: Couche de carte dynamique ArcGIS
+          content: Une couche de carte dynamique ArcGIS représente les données vectorielles (points, lignes et polygones). Les couches d’images de la carte sont des carreaux d’image à rendu dynamique.
         feature_layer:
           title: Couche de caractéristique ArcGIS
           content: Une couche de caractéristique ArcGIS affiche les données vectorielles (points, lignes et polygones) individuellement ou par caractéristiques recueillies.
@@ -93,17 +93,17 @@ en:
           title: Couche de carte imagée ArcGIS
           content: Une ouche de carte imagée ArcGIS affiche les données de trame (une grille de cellules utilisées pour stocker des images).
         index_map:
-          title: Carte d'index
-          content: Une carte d'index est une "table des matières" qui permet aux utilisateurs de sélectionner une carte ou un élément spécifique dans un ensemble plus grand et de s'y rendre pour l'affichage ou le téléchargement.
+          title: Carte d’index
+          content: Une carte d’index est une "table des matières" qui permet aux utilisateurs de sélectionner une carte ou un élément spécifique dans un ensemble plus grand et de s’y rendre pour l’affichage ou le téléchargement.
         oembed:
           title: Contenu intégré
-          content: Ce contenu est intégré par l'intermédiaire d'un visualiseur indépendant.
+          content: Ce contenu est intégré par l’intermédiaire d’un visualiseur indépendant.
         tiled_map_layer:
           title: Couche de carte en carreaux ArcGIS
           content: Un service de couche de carte en carreaux ArcGIS affiche un ensemble de carreaux accessible par le web et hébergé sur un serveur.
         wms:
           title: Service de carte web (WMS)
-          content: Un Service de carte web affiche un ensemble de données géospatial sous forme d'images cartographiques.
+          content: Un Service de carte web affiche un ensemble de données géospatial sous forme d’images cartographiques.
 
     aria-labels:
       arrow-circle-down: Flèche dans un cercle pointée vers le bas
