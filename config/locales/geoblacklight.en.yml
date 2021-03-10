@@ -28,6 +28,8 @@ en:
       placename: 'Placename'
       subject: 'Subject'
       contact_us: 'Contact Us'
+      about: 'About'
+      help: 'Help'
     tools:
       login_to_view: 'Login to View and Download'
       open_carto: 'Open in Carto'
