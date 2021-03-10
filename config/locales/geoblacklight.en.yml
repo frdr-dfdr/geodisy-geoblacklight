@@ -27,6 +27,7 @@ en:
       data_type: 'Data type'
       placename: 'Placename'
       subject: 'Subject'
+      contact_us: 'Contact Us'
     tools:
       login_to_view: 'Login to View and Download'
       open_carto: 'Open in Carto'
@@ -59,11 +60,6 @@ en:
       data_dictionary: 'ISO 19139 Metadata'
       services: 'Web services'
       services_close: 'Close'
-    relations:
-      ancestor: 'Source Datasets'
-      descendant: 'Linked Records'
-      browse_all: "Browse all %{count} records..."
-      title: 'Data Relations'
     metadata:
       view_metadata: 'View Metadata'
       more_details: 'More details at'
@@ -73,24 +69,11 @@ en:
       attribute: 'Attribute'
       value: 'Value'
       click_map: 'Click on map to inspect values'
-    help_text:
-      viewer_protocol:
-        dynamic_map_layer:
-      services_close: 'Close'
     relations:
       ancestor: 'Source Datasets'
       descendant: 'Linked Records'
       browse_all: "Browse all %{count} records..."
       title: 'Data Relations'
-    metadata:
-      view_metadata: 'View Metadata'
-      more_details: 'More details at'
-      metadata_error: 'The metadata view for selected schema is not available'
-      metadata_trace: 'Please select another metadata view. Alternately, try downloading the file or reaching out to the holding institution.'
-    show:
-      attribute: 'Attribute'
-      value: 'Value'
-      click_map: 'Click on map to inspect values'
     help_text:
       viewer_protocol:
         dynamic_map_layer:

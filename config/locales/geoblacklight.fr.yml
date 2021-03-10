@@ -73,8 +73,7 @@ fr:
       ancestor: 'Ensembles de données sources'
       descendant: 'Ensembles de données dérivés'
       browse_all: "Naviguer tous les enregistrements %{count}..."
-      # Missing translation for title: 'Data Relations"
-      title: 'Data Relations'
+      title: 'Relations de données'
     help_text:
       viewer_protocol:
         dynamic_map_layer:
@@ -109,90 +108,76 @@ fr:
       arrow-circle-down: Flèche dans un cercle pointée vers le bas
       baruch-cuny: Collège Baruch
       berkeley: Université de la California, Berkeley
-      #Missing book, bookmark
-      book: Book (icon)
-      bookmark: Bookmark (icon)
+      book: Livre (icon)
+      bookmark: Signet (icon)
 
       cd-rom: CD-Rom
       chicago: Université de Chicago
       columbia: Université Columbia
       cornell: Université Cornell
       dvd-rom: DVD-Rom
-      #missing email
-      email: Email (icon)
+      email: Courriel (icon)
       esri-globe: Esri Global
 
       geodisy: Geodisy (logo)
 
-      #missing Globe
       globe: Globe (icon)
       harvard: Université Harvard
-      #missing home
-      home: Home (icon)
+      home: Accueil (icon)
       illinois: Université de l’Illinois
-      #missing image
       image: Image (icon)
 
       indiana: Université de l’Indiana
       iowa: Université de l’Iowa
-      #missing leaf
-      leaf: Leaf (icon)
+      leaf: feuille (icon)
 
       lewis-clark: Lewis & Clark
-      #Missing line, map-marker, and map
-      line: Line (icon)
-      map-marker: Map marker (icon)
-      map: Map (icon)
+
+      line: Ligne (icon)
+      map-marker: Marqueur cartographique (icon)
+      map: Carte (icon)
 
       maryland: Université du Maryland
       massgis: MassGIS
-      #missing metadata
-      metadata: Metadata (icon)
+      metadata: Métadonnées (icon)
 
       michigan-state: Université de l’État du Michigan
       michigan: Université du Michigan
       minnesota: Université du Minnesota
       mit: Institut de technologie du Massachusetts
-      #Missing mixed
-      mixed: Mixed (icon)
+      mixed: Mixte (icon)
 
       multilinestring: Chaîne multiligne
       multipoint: Multipoint
       multipolygon: Multipolygone
       nyu: Université de New York
       ohio-state: Université de l’État de l’Ohio
-      #Missing pageLines and paper-map
-      pagelines-brands: Pagelines brands (icon)
-      paper-map: Paper map (icon)
+      pagelines-brands: Marques de lignes de page (icon)
+      paper-map: Carte papier (icon)
 
       penn-state: Université de l’État de la Pennsylvanie
-      #Missing point, polygon,polyline
       point: Point (icon)
-      polygon: Polygon (icon)
-      polyline: Polyline (icon)
+      polygon: Polygone (icon)
+      polyline: Polyligne (icon)
 
       princeton: Université Princeton
       public: Contenu public
       purdue: Université Purdue
-      #Missing raster
-      raster: Raster (icon)
+      raster: Trame (icon)
 
       restricted: Contenu restreint
       sms: SMS
       stanford: Université Stanford
-      #Missing table and tags
-      table: Table (icon)
-      tags: Tags (icon)
+      table: Tableau (icon)
+      tags: Onglets (icon)
 
       texas: Université du Texas à Austin
       tufts: Université Tufts
-      #Missing UBC
-      ubc: University of British Columbia (logo)
+      ubc: Université de la Colombie-Britannique (logo)
 
       ucla: Université de la Californie à Los Angeles
       uva: Université de la Virginie
-      #Missing Web Services
-      web_services: Web services (icon)
+      web_services: Services Web (icon)
 
       wisconsin: Université du Wisconsin
 
