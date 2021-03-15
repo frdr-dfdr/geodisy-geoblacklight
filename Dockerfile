@@ -23,13 +23,14 @@ ENV GEOBLACKLIGHT_POSTGRES_PASSWORD=postgres
 ENV GEOBLACKLIGHT_POSTGRES_HOST=db
 ENV GEOBLACKLIGHT_POSTGRES_PORT=5432
 
-COPY ./Gemfile /usr/src/Gemfile
+COPY ./Gemfile* /usr/src/
 
 RUN gem install bundler -v 2.2.0.rc.2
 
+RUN bundle install
+
 COPY . /usr/src
-RUN bundle install && \
-    bundle exec rake assets:precompile
+RUN bundle exec rake assets:precompile
 
 RUN yarn install --check-files
 

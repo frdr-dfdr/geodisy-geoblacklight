@@ -95,7 +95,14 @@ GeoBlacklight.Basemaps = {
             worldCopyJump: true,
             maxZoom: 16,
             retina: '@2x',
-            detectRetina: false,
+            detectRetina: false
           }
-        )
+        ),
+    OpenStreetMap_France: L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+        	maxZoom: 20,
+        	attribution: '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        	worldCopyJump: true,
+        	retina: '@2x',
+            detectRetina: false,
+        });
 };

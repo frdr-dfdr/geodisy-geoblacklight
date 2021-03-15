@@ -255,6 +255,14 @@ class CatalogController < ApplicationController
     # 'midnightCommander'
 
     config.basemap_provider = 'Esri_WorldTopoMap'
+    # It seems like the locale is always set to the default 'en' when this controller
+    # is loaded, so it never trys to load the French map
+    #
+    #if I18n.locale == 'fr'
+    #  config.basemap_provider = 'OpenStreetMap_France'
+    #else
+    #  config.basemap_provider = 'Esri_WorldTopoMap'
+    #end
 
     # Configuration for autocomplete suggestor
     config.autocomplete_enabled = true
