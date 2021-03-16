@@ -30,7 +30,7 @@ en:
       contact_us: 'Contact Us'
       about: 'About'
       help: 'Help'
-      frdr_logo: 'ubc.png'
+      frdr_logo: 'frdr.png'
     tools:
       login_to_view: 'Login to View and Download'
       open_carto: 'Open in Carto'
