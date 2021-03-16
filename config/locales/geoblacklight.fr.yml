@@ -63,6 +63,7 @@ fr:
       data_dictionary: 'Documentation'
       services: 'Services web'
       services_close: 'Fermer'
+      map_service: OpenStreetMap_France
     metadata:
       view_metadata: 'Afficher les métadonnées'
       more_details: 'Plus de détails à'

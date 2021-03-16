@@ -63,6 +63,7 @@ en:
       data_dictionary: 'ISO 19139 Metadata'
       services: 'Web services'
       services_close: 'Close'
+      map_service: OpenStreetMap_France
     metadata:
       view_metadata: 'View Metadata'
       more_details: 'More details at'

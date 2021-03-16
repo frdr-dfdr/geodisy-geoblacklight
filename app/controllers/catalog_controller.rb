@@ -254,7 +254,7 @@ class CatalogController < ApplicationController
     # 'flatBlue'
     # 'midnightCommander'
 
-    config.basemap_provider = 'Esri_WorldTopoMap'
+    config.basemap_provider = t('geoblacklight.references.map_service')
     # It seems like the locale is always set to the default 'en' when this controller
     # is loaded, so it never trys to load the French map
     #
