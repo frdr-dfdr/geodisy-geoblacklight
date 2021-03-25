@@ -57,7 +57,7 @@ a.btn.btn-primary {
  color: #FAFAFA !important;
  }
 
-a.nav-link.navbar-link:hover, a.nav-link.navbar-link:focus, a.nav-link.navbar-link:active, a.nav-link:hover, a.nav-link:focus, a.nav-link:active, a.dropdown-toggle {
+a.nav-link.navbar-link:hover, a.nav-link.navbar-link:focus, a.nav-link.navbar-link:active, a.nav-link:hover, a.nav-link:focus, a.nav-link:active, a.dropdown-toggle:hover, a.dropdown-toggle:active, a.dropdown-toggle:focus{
     color: #343a40 !important;
     background-color: #FAFAFA;
     text-decoration: underline;
@@ -118,4 +118,8 @@ a.btn.btn-default.download.download-original{
     padding: 3px 20px;
     background-color: #2882bb;
     color: #FFFFFF;
+}
+
+a.dropdown-toggle {
+padding-left: 4px;
 }
