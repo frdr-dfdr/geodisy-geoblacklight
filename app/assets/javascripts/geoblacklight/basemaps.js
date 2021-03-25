@@ -104,5 +104,5 @@ GeoBlacklight.Basemaps = {
         	worldCopyJump: true,
         	retina: '@2x',
             detectRetina: false,
-        });
+        })
 };
