@@ -105,3 +105,21 @@ a.page-link {
 a.btn.btn-default.download.download-original{
     color: white !important;
 }
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333 !important;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    padding: 3px 20px;
+    background-color: #2882bb;
+    color: #FFFFFF !important;
+}
+
+a.dropdown-toggle {
+padding: 8px;
+}

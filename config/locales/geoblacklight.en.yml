@@ -31,10 +31,28 @@ en:
       about: 'About'
       help: 'Help'
       frdr_logo: 'frdr.png'
+      language: 'EN'
+      search_here: 'Search Here'
+      use_map: 'To use the map search:'
+      move_map: 'Move the map to display your area of interest. You can also hold the shift key and click to draw a box for the map to zoom toward'
+      click: 'Click'
+      results: 'to see the results'
+    facets:
+      author: 'Author'
+      publisher: 'Publisher'
+      place: 'Place'
+      collection: 'Collection'
+      access: 'Access'
+      format: 'Format'
+      data_type: 'Data type'
+      institution: 'Institution'
+      subject: 'Subject'
+
     tools:
       login_to_view: 'Login to View and Download'
       open_carto: 'Open in Carto'
       open_arcgis: 'Open in ArcGIS Online'
+
     formats:
       arcgrid: 'ArcGRID'
       geojson: 'GeoJSON'
@@ -63,6 +81,7 @@ en:
       data_dictionary: 'ISO 19139 Metadata'
       services: 'Web services'
       services_close: 'Close'
+      map_service: OpenStreetMap_France
     metadata:
       view_metadata: 'View Metadata'
       more_details: 'More details at'
@@ -167,4 +186,3 @@ en:
       uva: University of Virginia (logo)
       web_services: Web services (icon)
       wisconsin: University of Wisconsin (logo)
-

@@ -31,6 +31,22 @@ fr:
       about: 'À propos'
       help: 'Aide'
       frdr_logo: 'sitelogo_fr.png'
+      language: 'FR'
+      search_here: 'Cherche ici'
+      use_map: 'Pour utiliser la recherche de carte:'
+      move_map: "Déplacez la carte pour afficher votre zone d'intérêt. Vous pouvez également maintenir la touche Maj enfoncée et cliquez pour dessiner une boîte pour la carte à zoomer"
+      click: 'Cliquez'
+      results: 'voir les résultats'
+    facets:
+      author: "Auteur"
+      publisher: "Éditeur"
+      place: 'Lieu'
+      collection: 'Collection'
+      access: 'Accès'
+      format: 'Format'
+      institution: 'Établissement'
+      data_type: 'Type de données'
+      subject: 'Sujet'
     tools:
       login_to_view: 'Connectez-vous pour afficher et télécharger'
       open_carto: 'Ouvrir dans Carto'
@@ -63,6 +79,7 @@ fr:
       data_dictionary: 'Métadonnées ISO 19139'
       services: 'Services web'
       services_close: 'Fermer'
+      map_service: OpenStreetMap_France
     metadata:
       view_metadata: 'Afficher les métadonnées'
       more_details: 'Plus de détails à'
@@ -96,7 +113,7 @@ fr:
           content: Une ouche de carte imagée ArcGIS affiche les données de trame (une grille de cellules utilisées pour stocker des images).
         index_map:
           title: Carte d’index
-          content: Une carte d’index est une "table des matières" qui permet aux utilisateurs de sélectionner une carte ou un élément spécifique dans un ensemble plus grand et de s’y rendre pour l’affichage ou le téléchargement.
+          content: Une carte d’index est une "table des matières" qui permet aux utilisateurs de sélectionner une carte ou un élément spécifique dans un ensemble plus grand et de s’y rendre pour l’affichag$
         oembed:
           title: Contenu intégré
           content: Ce contenu est intégré par l’intermédiaire d’un visualiseur indépendant.
@@ -106,7 +123,6 @@ fr:
         wms:
           title: Service de carte web (WMS)
           content: Un Service de carte web affiche un ensemble de données géospatial sous forme d’images cartographiques.
-
     aria-labels:
       arrow-circle-down: Flèche dans un cercle pointée vers le bas
       baruch-cuny: Collège Baruch
@@ -143,7 +159,6 @@ fr:
       maryland: Université du Maryland
       massgis: MassGIS
       metadata: Métadonnées (icon)
-
       michigan-state: Université de l’État du Michigan
       michigan: Université du Michigan
       minnesota: Université du Minnesota
