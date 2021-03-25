@@ -60,7 +60,7 @@ fr:
       tiled_map_layer: 'Couche de carte en carreaux ArcGIS'
       dynamic_map_layer: 'Couche de carte dynamique ArcGIS'
       image_map_layer: 'Couche de carte imagée ArcGIS'
-      data_dictionary: 'Documentation'
+      data_dictionary: 'Métadonnées ISO 19139'
       services: 'Services web'
       services_close: 'Fermer'
     metadata:
