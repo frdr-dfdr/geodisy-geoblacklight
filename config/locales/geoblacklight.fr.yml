@@ -37,6 +37,16 @@ fr:
       move_map: "Déplacez la carte pour afficher votre zone d'intérêt. Vous pouvez également maintenir la touche Maj enfoncée et cliquez pour dessiner une boîte pour la carte à zoomer"
       click: 'Cliquez'
       results: 'voir les résultats'
+    facets:
+      author: "Auteur"
+      publisher: "Éditeur"
+      place: 'Lieu'
+      collection: 'Collection'
+      access: 'Accès'
+      format: 'Format'
+      institution: 'Établissement'
+      data_type: 'Type de données'
+      subject: 'Sujet'
     tools:
       login_to_view: 'Connectez-vous pour afficher et télécharger'
       open_carto: 'Ouvrir dans Carto'

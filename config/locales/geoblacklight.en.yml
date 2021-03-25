@@ -37,6 +37,16 @@ en:
       move_map: 'Move the map to display your area of interest. You can also hold the shift key and click to draw a box for the map to zoom toward'
       click: 'Click'
       results: 'to see the results'
+    facets:
+      author: 'Author'
+      publisher: 'Publisher'
+      place: 'Place'
+      collection: 'Collection'
+      access: 'Access'
+      format: 'Format'
+      data_type: 'Data type'
+      institution: 'Institution'
+      subject: 'Subject'
 
     tools:
       login_to_view: 'Login to View and Download'
