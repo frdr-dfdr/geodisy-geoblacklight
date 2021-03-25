@@ -32,6 +32,11 @@ fr:
       help: 'Aide'
       frdr_logo: 'sitelogo_fr.png'
       language: 'FR'
+      search_here: 'Cherche ici'
+      use_map: 'Pour utiliser la recherche de carte:'
+      move_map: "Déplacez la carte pour afficher votre zone d'intérêt. Vous pouvez également maintenir la touche Maj enfoncée et cliquez pour dessiner une boîte pour la carte à zoomer"
+      click: 'Cliquez'
+      results: 'voir les résultats'
     tools:
       login_to_view: 'Connectez-vous pour afficher et télécharger'
       open_carto: 'Ouvrir dans Carto'
