@@ -31,6 +31,7 @@ en:
       about: 'About'
       help: 'Help'
       frdr_logo: 'frdr.png'
+      language: 'EN'
     tools:
       login_to_view: 'Login to View and Download'
       open_carto: 'Open in Carto'

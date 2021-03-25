@@ -31,6 +31,7 @@ fr:
       about: 'À propos'
       help: 'Aide'
       frdr_logo: 'sitelogo_fr.png'
+      language: 'FR'
     tools:
       login_to_view: 'Connectez-vous pour afficher et télécharger'
       open_carto: 'Ouvrir dans Carto'
