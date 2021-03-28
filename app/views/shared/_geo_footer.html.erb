@@ -4,7 +4,7 @@
         <ul>
             <li>
               <div id="geo-footer-img" class="span2">
-                <%= link_to 'https://portagenetwork.ca/' do %>
+                <%= link_to t('geoblacklight.home.portage') do %>
                   <%= image_tag "portage_logo.png", alt: "Portage", height: 45 %>
                 <% end %>
               </div>
@@ -25,14 +25,14 @@
             </li>
             <li>
               <div id="geo-footer-img" class="span2">
-                <%= link_to 'http://www.carl-abrc.ca/' do %>
+                <%= link_to t('geoblacklight.home.carl') do %>
                   <%= image_tag "logo_carl_enfr.png", alt: "Portage", height: 75 %>
                 <% end %>
               </div>
             </li>
             <li>
               <div id="geo-footer-img" class="span2">
-                <%= link_to 'http://www.computecanada.ca/' do %>
+                <%= link_to t('geoblacklight.home.cc') do %>
                   <%= image_tag "logo_cc_enfr.png", alt: "Compute Canada", height: 75 %>
                 <% end %>
               </div>
@@ -42,12 +42,12 @@
             <div class="col-md-12" style="text-align:left;">
                 <footer id="footer-text">
                     <br>
-                    © 2017 - 2020 Canadian Association of Research Libraries &amp; Compute Canada
+                    © 2017 - 2021 <%= t('geoblacklight.home.can_lib') %>
                     <br>
-                    Compute Canada and CARL respect the privacy of individuals and will only collect, use, and disclose Personal Information in keeping with information access and privacy law.
+                    <%= t('geoblacklight.home.cc_carl_priv') %>
                     <br>
                     <ul>
-                        <li><a href="https://www.frdr-dfdr.ca/docs/en/privacy_policy/" target="_blank">Privacy Policy</a></li>
+                        <li><a href="https://www.frdr-dfdr.ca/docs/en/privacy_policy/" target="_blank"><%= t('geoblacklight.home.priv') %></a></li>
                         <br>
                         <li><span id="esri"><sup>(1)</sup><sub>Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community</sub></span></li>
                      </ul>

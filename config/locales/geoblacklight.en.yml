@@ -39,6 +39,14 @@ en:
       move_map: 'Move the map to display your area of interest. You can also hold the shift key and click to draw a box for the map to zoom toward'
       click: 'Click'
       results: 'to see the results'
+      frdr: 'www.frdr-dfdr.com'
+      cc: 'https://www.computecanada.ca'
+      portage: 'https://portagenetwork.ca/'
+      move_map_search: 'Search when I move the map'
+      redo_search: 'Redo search here'
+      can_lib: 'Canadian Association of Research Libraries & Compute Canada'
+      cc_carl_priv: 'Compute Canada and CARL respect the privacy of individuals and will only collect, use, and disclose Personal Information in keeping with information access and privacy law.'\
+      priv: 'Privacy Policy'
     facets:
       author: 'Author'
       publisher: 'Publisher'
@@ -83,7 +91,7 @@ en:
       data_dictionary: 'ISO 19139 Metadata'
       services: 'Web services'
       services_close: 'Close'
-      map_service: OpenStreetMap_France
+      map_service: 'OpenStreetMap_France'
     metadata:
       view_metadata: 'View Metadata'
       more_details: 'More details at'

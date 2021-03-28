@@ -39,6 +39,14 @@ fr:
       move_map: "Déplacez la carte pour afficher votre zone d'intérêt. Vous pouvez également maintenir la touche Maj enfoncée et cliquez pour dessiner une boîte pour la carte à zoomer"
       click: 'Cliquez'
       results: 'voir les résultats'
+      frdr: 'www.frdr-dfdr.ca/repo/?locale=fr'
+      cc: 'https://www.computecanada.ca/?lang=fr'
+      portage: 'https://portagenetwork.ca/fr/'
+      move_map_search: 'Rechercher lorsque je déplace la carte'
+      redo_search: 'Refaire la recherche ici'
+      can_lib: 'Association des bibliothèques de recherche du Canada et Calcul Canada'
+      cc_carl_priv: "Calcul Canada et l'ABRC respectent la vie privée des personnes et ne collecteront, utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l'accès à l'information et la protection de la vie privée."
+      priv: 'Politique de confidentialité'
     facets:
       author: "Auteur"
       publisher: "Éditeur"
