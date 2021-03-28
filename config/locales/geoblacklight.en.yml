@@ -40,13 +40,15 @@ en:
       click: 'Click'
       results: 'to see the results'
       frdr: 'www.frdr-dfdr.com'
-      cc: 'https://www.computecanada.ca'
-      portage: 'https://portagenetwork.ca/'
+      cc: 'www.computecanada.ca'
+      portage: 'portagenetwork.ca/'
+      carl: 'www.carl-abrc.ca/'
       move_map_search: 'Search when I move the map'
       redo_search: 'Redo search here'
       can_lib: 'Canadian Association of Research Libraries & Compute Canada'
-      cc_carl_priv: 'Compute Canada and CARL respect the privacy of individuals and will only collect, use, and disclose Personal Information in keeping with information access and privacy law.'\
+      cc_carl_priv: 'Compute Canada and CARL respect the privacy of individuals and will only collect, use, and disclose Personal Information in keeping with information access and privacy law.'
       priv: 'Privacy Policy'
+      priv_uri: 'www.frdr-dfdr.ca/docs/en/privacy_policy/'
     facets:
       author: 'Author'
       publisher: 'Publisher'
