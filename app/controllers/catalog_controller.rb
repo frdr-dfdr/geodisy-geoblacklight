@@ -86,7 +86,7 @@ class CatalogController < ApplicationController
     # }
 
     config.add_facet_field Settings.FIELDS.PROVENANCE, label: 'Institution', limit: 8, partial: "icon_facet"
-    config.add_facet_field Settings.FIELDS.CREATOR, :label => <%= t('geoblacklight.facets.author') %>, :limit => 8
+    config.add_facet_field Settings.FIELDS.CREATOR, :label => 'Author', :limit => 8
     config.add_facet_field Settings.FIELDS.PUBLISHER, :label => 'Publisher', :limit => 8
     config.add_facet_field Settings.FIELDS.SUBJECT, :label => 'Subject', :limit => 8
     config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, :label => 'Place', :limit => 8
@@ -258,11 +258,11 @@ class CatalogController < ApplicationController
     # It seems like the locale is always set to the default 'en' when this controller
     # is loaded, so it never trys to load the French map
     #
-    #if I18n.locale == 'fr'
-    #  config.basemap_provider = 'OpenStreetMap_France'
-    #else
-    #  config.basemap_provider = 'Esri_WorldTopoMap'
-    #end
+   if I18n.locale == 'fr'
+      config.basemap_provider = 'OpenStreetMap_France'
+    else
+      config.basemap_provider = 'Esri_WorldTopoMap'
+    end
 
     # Configuration for autocomplete suggestor
     config.autocomplete_enabled = true
