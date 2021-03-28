@@ -81,3 +81,5 @@ gem 'grape'
 gem 'grape-active_model_serializers'
 gem 'rack-cors'
 
+gem install rails-i18n -v '~> 5.1'
+
