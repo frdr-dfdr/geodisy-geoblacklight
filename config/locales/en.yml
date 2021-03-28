@@ -54,3 +54,7 @@ en:
         subject_era_facet: 'Era'
         example_pivot_field: 'Pivot Field'
         example_query_facet_field: 'Publish Date'
+  map:
+    move_map_search: 'Search when I move the map'
+    redo_search: 'Redo search here'
+    search_here: 'Search Here'

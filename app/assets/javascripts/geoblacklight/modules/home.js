@@ -1,3 +1,7 @@
+import {redo} from './geosearch_scripts.js';
+import {move_map} from './geosearch_scripts.js';
+import {search_here} from './geosearch_scripts.js';
+
 Blacklight.onLoad(function() {
   $('[data-map="home"]').each(function(i, element) {
 

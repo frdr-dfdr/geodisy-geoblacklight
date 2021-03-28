@@ -23,3 +23,9 @@
 //= require blacklight/blacklight
 
 //= require_tree .
+//= require i18n
+//= require i18n/translations
+//= require jquery_ujs
+//= require localization
+//= require turbolinks
+

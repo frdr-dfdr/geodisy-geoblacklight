@@ -31,3 +31,7 @@ fr:
         subject_geo_facet: 'Sujets géographiques'
         subject_era_facet: 'Couverture temporelle'
         example_query_facet_field: 'Date de publication'
+  map:
+    move_map_search: 'Rechercher lorsque je déplace la carte'
+    redo_search: 'Refaire la recherche ici'
+    search_here: 'Cherche ici'

@@ -1,3 +1,4 @@
+
 !function(global) {
   "use strict";
 
@@ -35,8 +36,8 @@
         History.pushState(null, document.title, this.getSearchUrl());
       },
       delay: 800,
-      staticButton: '<a class="btn btn-primary">'I18n.t('redo_search') '<span class="glyphicon glyphicon-repeat"></span></a>',
-      dynamicButton: "<label><input type=\"checkbox\" checked>"I18n.t('move_map_search')"</label>"
+      staticButton: redo(),
+      dynamicButton: move_map()
     },
 
     initialize: function(options) {
