@@ -53,11 +53,11 @@ a.btn.btn-primary {
 
 
 
- a.nav-link.navbar-link, a.nav-link{
+ a.nav-link.navbar-link, a.nav-link, a.dropdown-toggle{
  color: #FAFAFA !important;
  }
 
-a.nav-link.navbar-link:hover, a.nav-link.navbar-link:focus, a.nav-link.navbar-link:active, a.nav-link:hover, a.nav-link:focus, a.nav-link:active {
+a.nav-link.navbar-link:hover, a.nav-link.navbar-link:focus, a.nav-link.navbar-link:active, a.nav-link:hover, a.nav-link:focus, a.nav-link:active, a.dropdown-toggle:hover{
     color: #343a40 !important;
     background-color: #FAFAFA;
     text-decoration: underline;
