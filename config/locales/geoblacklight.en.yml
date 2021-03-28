@@ -1,5 +1,7 @@
 en:
   geoblacklight:
+    solr_facets:
+      authors: 'Author(s)'
     bbox_label: 'Bounding Box'
     download:
       download: 'Download'

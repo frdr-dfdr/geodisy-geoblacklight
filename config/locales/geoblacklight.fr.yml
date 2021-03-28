@@ -1,5 +1,7 @@
 fr:
   geoblacklight:
+    solr_facets:
+      authors: 'Auteur(s)'
     bbox_label: 'Cadre englobant'
     download:
       download: 'Télécharger'
