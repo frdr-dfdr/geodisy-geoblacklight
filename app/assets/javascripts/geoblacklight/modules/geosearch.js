@@ -35,8 +35,8 @@
         History.pushState(null, document.title, this.getSearchUrl());
       },
       delay: 800,
-      staticButton: '<a class="btn btn-primary"><%= t(\'redo_search\') %> <span class="glyphicon glyphicon-repeat"></span></a>',
-      dynamicButton: "<label><input type=\"checkbox\" checked><%= t('move_map_search') %></label>"
+      staticButton: '<a class="btn btn-primary">'I18n.t('redo_search') '<span class="glyphicon glyphicon-repeat"></span></a>',
+      dynamicButton: "<label><input type=\"checkbox\" checked>"I18n.t('move_map_search')"</label>"
     },
 
     initialize: function(options) {
