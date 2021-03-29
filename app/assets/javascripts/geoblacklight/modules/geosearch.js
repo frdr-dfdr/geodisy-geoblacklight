@@ -36,8 +36,8 @@
         History.pushState(null, document.title, this.getSearchUrl());
       },
       delay: 800,
-      staticButton: redo(),
-      dynamicButton: move_map()
+       staticButton: '<a class="redo btn-primary"><span class="glyphicon glyphicon-repeat"></span></a>',
+       dynamicButton: '<label class="move_map"><input type="checkbox" checked></label>'
     },
 
     initialize: function(options) {
