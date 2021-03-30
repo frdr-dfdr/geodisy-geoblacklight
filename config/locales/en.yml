@@ -58,3 +58,10 @@ en:
     move_map_search: 'Search when I move the map'
     redo_search: 'Redo search here'
     search_here: 'Search Here'
+  facets:
+    authors: 'Author(s)'
+    description: 'Description'
+    publisher: 'Publisher'
+    collection: 'Collection'
+    places: 'Place(s)'
+    subjects: 'Subject(s)'
