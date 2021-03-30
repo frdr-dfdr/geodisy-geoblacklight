@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   mount API::Base, at: "/"
 
 
-  scope "(:locale)", locale: /en|fr/ do
+  scope "(:locale)", locale: /en/ do
     mount Blacklight::Engine => '/'
     root to: "catalog#index"
     concern :searchable, Blacklight::Routes::Searchable.new
@@ -15,6 +15,18 @@ Rails.application.routes.draw do
     devise_for :users
     concern :exportable, Blacklight::Routes::Exportable.new
   end
+
+  scope "(:locale)", locale: /fr/ do
+      mount Blacklight::Engine => '/'
+      root to: "catalog#index"
+      concern :searchable, Blacklight::Routes::Searchable.new
+
+      resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog_fr' do
+        concerns :searchable
+      end
+      devise_for :users
+      concern :exportable, Blacklight::Routes::Exportable.new
+    end
 
   #resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
   #  concerns :searchable

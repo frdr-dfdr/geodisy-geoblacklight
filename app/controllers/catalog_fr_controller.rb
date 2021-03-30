@@ -85,17 +85,17 @@ class CatalogController < ApplicationController
     #    :years_25 => { :label => 'within 25 Years', :fq => "pub_date:[#{Time.now.year - 25 } TO *]" }
     # }
 
-    config.add_facet_field Settings.FIELDS.PROVENANCE, label: 'Institution', limit: 8, partial: "icon_facet"
-    config.add_facet_field Settings.FIELDS.CREATOR, :label => 'Author', :limit => 8
-    config.add_facet_field Settings.FIELDS.PUBLISHER, :label => 'Publisher', :limit => 8
-    config.add_facet_field Settings.FIELDS.SUBJECT, :label => 'Subject', :limit => 8
-    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, :label => 'Place', :limit => 8
+    config.add_facet_field Settings.FIELDS.PROVENANCE, label: 'Établissement', limit: 8, partial: "icon_facet"
+    config.add_facet_field Settings.FIELDS.CREATOR, :label => 'Auteur', :limit => 8
+    config.add_facet_field Settings.FIELDS.PUBLISHER, :label => 'Éditeur', :limit => 8
+    config.add_facet_field Settings.FIELDS.SUBJECT, :label => 'Sujet', :limit => 8
+    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, :label => 'Lieu', :limit => 8
     config.add_facet_field Settings.FIELDS.PART_OF, :label => 'Collection', :limit => 8
 
-    config.add_facet_field Settings.FIELDS.YEAR, :label => 'Year', :limit => 10
+    config.add_facet_field Settings.FIELDS.YEAR, :label => 'An', :limit => 10
 
-    config.add_facet_field Settings.FIELDS.RIGHTS, label: 'Access', limit: 8, partial: "icon_facet"
-    config.add_facet_field Settings.FIELDS.GEOM_TYPE, label: 'Data type', limit: 8, partial: "icon_facet"
+    config.add_facet_field Settings.FIELDS.RIGHTS, label: 'Accès', limit: 8, partial: "icon_facet"
+    config.add_facet_field Settings.FIELDS.GEOM_TYPE, label: 'Type de données', limit: 8, partial: "icon_facet"
     config.add_facet_field Settings.FIELDS.FILE_FORMAT, :label => 'Format', :limit => 8
 
     # Have BL send all facet field names to Solr, which has been the default
@@ -133,17 +133,17 @@ class CatalogController < ApplicationController
     # item_prop: [String] property given to span with Schema.org item property
     # link_to_search: [Boolean] that can be passed to link to a facet search
     # helper_method: [Symbol] method that can be used to render the value
-    config.add_show_field Settings.FIELDS.CREATOR, label: 'Author(s)', itemprop: 'author'
-    config.add_show_field Settings.FIELDS.DESCRIPTION, label: 'Description', itemprop: 'description', helper_method: :render_value_as_truncate_abstract
+    config.add_show_field Settings.FIELDS.CREATOR, label: 'Auteur(s)', itemprop: 'author'
+    config.add_show_field Settings.FIELDS.DESCRIPTION, label: 'Éditeur', itemprop: 'description', helper_method: :render_value_as_truncate_abstract
     config.add_show_field Settings.FIELDS.PUBLISHER, label: 'Publisher', itemprop: 'publisher'
     config.add_show_field Settings.FIELDS.PART_OF, label: 'Collection', itemprop: 'isPartOf'
-    config.add_show_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Place(s)', itemprop: 'spatial', link_to_facet: true
-    config.add_show_field Settings.FIELDS.SUBJECT, label: 'Subject(s)', itemprop: 'keywords', link_to_facet: true
-    config.add_show_field Settings.FIELDS.TEMPORAL, label: 'Year', itemprop: 'temporal'
-    config.add_show_field Settings.FIELDS.PROVENANCE, label: 'Held by', link_to_facet: true
+    config.add_show_field Settings.FIELDS.SPATIAL_COVERAGE, label: 'Lieu(x)', itemprop: 'spatial', link_to_facet: true
+    config.add_show_field Settings.FIELDS.SUBJECT, label: 'Sujet(s)', itemprop: 'keywords', link_to_facet: true
+    config.add_show_field Settings.FIELDS.TEMPORAL, label: 'An', itemprop: 'temporal'
+    config.add_show_field Settings.FIELDS.PROVENANCE, label: 'Tenu par', link_to_facet: true
     config.add_show_field(
       Settings.FIELDS.REFERENCES,
-      label: 'Data source',
+      label: 'Source de données',
       accessor: [:external_url],
       if: proc { |_, _, doc| doc.external_url },
       helper_method: :render_references_url
@@ -167,7 +167,7 @@ class CatalogController < ApplicationController
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise.
 
-    config.add_search_field 'all_fields', :label => 'All Fields'
+    config.add_search_field 'all_fields', :label => 'Tous les champs'
     # config.add_search_field 'dc_title_ti', :label => 'Title'
     # config.add_search_field 'dc_description_ti', :label => 'Description'
 
@@ -222,9 +222,9 @@ class CatalogController < ApplicationController
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
     config.add_sort_field 'score desc, dc_title_sort asc', :label => 'relevance'
-    config.add_sort_field "#{Settings.FIELDS.YEAR} desc, dc_title_sort asc", :label => 'year'
-    config.add_sort_field "#{Settings.FIELDS.PUBLISHER} asc, dc_title_sort asc", :label => 'publisher'
-    config.add_sort_field 'dc_title_sort asc', :label => 'title'
+    config.add_sort_field "#{Settings.FIELDS.YEAR} desc, dc_title_sort asc", :label => 'an'
+    config.add_sort_field "#{Settings.FIELDS.PUBLISHER} asc, dc_title_sort asc", :label => 'éditeur'
+    config.add_sort_field 'dc_title_sort asc', :label => 'titre'
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
@@ -254,7 +254,8 @@ class CatalogController < ApplicationController
     # 'flatBlue'
     # 'midnightCommander'
 
-    config.basemap_provider = 'Esri_WorldTopoMap'
+    config.basemap_provider = 'OpenStreetMap_France'
+
 
 
     # Configuration for autocomplete suggestor
