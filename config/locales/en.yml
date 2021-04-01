@@ -21,13 +21,11 @@
 
 en:
   blacklight:
-    search:
-      fields:
-        search:
-          all_fields: 'All fields'
-          title: 'Title'
-          author: 'Author'
-          subject: 'Subject'
+    search_fields:
+        all_fields: 'All fields'
+        title: 'Title'
+        author: 'Author'
+        subject: 'Subject'
         sort:
           relevancy: 'relevance'
           pub_date: 'publication year'
@@ -65,3 +63,5 @@ en:
     collection: 'Collection'
     places: 'Place(s)'
     subjects: 'Subject(s)'
+    held_by: 'Held by'
+    data_source: 'Data source'
