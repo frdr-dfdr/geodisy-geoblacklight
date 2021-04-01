@@ -30,25 +30,26 @@ fr:
       placename: 'Nom de lieu'
       subject: 'Sujet'
       contact_us: 'Contactez nous'
-      contact_us_uri: 'www.frdr-dfdr.ca/repo/contactus?locale=fr'
+      contact_us_uri: 'https://www.frdr-dfdr.ca/repo/contactus?locale=fr'
       about: 'À propos'
-      about_uri: 'www.frdr-dfdr.ca/docs/fr/a_propos/#projet-geodisy'
+      about_uri: 'https://www.frdr-dfdr.ca/docs/fr/a_propos/#projet-geodisy'
       help: 'Aide'
       frdr_logo: 'sitelogo_fr.png'
       language: 'FR'
-      search_here: 'Cherche ici'
-      use_map: 'Pour utiliser la recherche de carte:'
-      move_map: "Déplacez la carte pour afficher votre zone d'intérêt. Vous pouvez également maintenir la touche Maj enfoncée et cliquez pour dessiner une boîte pour la carte à zoomer"
-      click: 'Cliquez'
-      results: 'voir les résultats'
-      frdr: 'www.frdr-dfdr.ca/repo/?locale=fr'
+      search_here: 'Faire une recherche ici'
+      use_map: 'Pour utiliser la recherche cartographique:'
+      move_map: "Déplacez la carte pour afficher votre région d’intérêt. Vous pouvez également tenir la touche Majuscule enfoncée et cliquer pour encadrer une région sur la carte afin de l’agrandir."
+      click: 'Cliquez sur'
+      results: 'pour voir les résultats'
+      frdr: 'https://www.frdr-dfdr.ca/repo/?locale=fr'
       cc: 'https://www.computecanada.ca/?lang=fr'
       portage: 'https://portagenetwork.ca/fr/'
       carl: 'https://www.carl-abrc.ca/fr/'
       can_lib: 'Association des bibliothèques de recherche du Canada et Calcul Canada'
-      cc_carl_priv: "Calcul Canada et l'ABRC respectent la vie privée des personnes et ne collecteront, utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l'accès à l'information et la protection de la vie privée."
+      cc_carl_priv: "Calcul Canada et l’ABRC respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
       priv: 'Politique de confidentialité'
-      priv_uri: 'www.frdr-dfdr.ca/docs/fr/a_propos/'
+      priv_uri: 'https://www.frdr-dfdr.ca/docs/fr/a_propos/'
+      map_attrib: 'Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, RNCan, GeoBase, Kadaster NL, Ordnance Survey, Esri Japon, METI, Esri Chine (Hong Kong) et la communauté des utilisateurs de SIG'
     facets:
       author: "Auteur"
       publisher: "Éditeur"
