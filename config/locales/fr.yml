@@ -30,6 +30,18 @@ fr:
       subject_geo_facet: 'Sujets géographiques'
       subject_era_facet: 'Couverture temporelle'
       example_query_facet_field: 'Date de publication'
+    search:
+      fields:
+        dc_creator_sm: 'Auteur(s)'
+        authors: 'Auteur(s)'
+        description: 'Description'
+        publisher: 'Éditeur'
+        collection: 'Collection'
+        places: 'Place(s)'
+        subjects: 'Subject(s)'
+        held_by: 'Détenu par'
+        data_source: 'Sources de données'
+
   map:
     move_map_search: 'Rechercher lorsque je déplace la carte'
     redo_search: 'Refaire la recherche ici'
@@ -43,3 +55,4 @@ fr:
     subjects: 'Subject(s)'
     held_by: 'Détenu par'
     data_source: 'Sources de données'
+

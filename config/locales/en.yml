@@ -52,6 +52,18 @@ en:
         subject_era_facet: 'Era'
         example_pivot_field: 'Pivot Field'
         example_query_facet_field: 'Publish Date'
+    search:
+      fields:
+        dc_creator_sm: 'Author(s)'
+        authors: 'Author(s)'
+        authors_display: 'Author(s)display'
+        description: 'Description'
+        publisher: 'Publisher'
+        collection: 'Collection'
+        places: 'Place(s)'
+        subjects: 'Subject(s)'
+        held_by: 'Held by'
+        data_source: 'Data source'
   map:
     move_map_search: 'Search when I move the map'
     redo_search: 'Redo search here'
