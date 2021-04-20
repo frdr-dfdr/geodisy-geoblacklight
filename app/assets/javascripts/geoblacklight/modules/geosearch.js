@@ -47,7 +47,7 @@
     },
 
     onAdd: function(map) {
-      var $container = $('<div class="leaflet-control search-control"></div>'),
+      var $container = $('<div class="leaflet-control search-here search-control"></div>'),
           staticSearcher, dynamicSearcher;
       this._map = map;
 
