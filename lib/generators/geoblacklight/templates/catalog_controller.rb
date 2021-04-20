@@ -85,18 +85,18 @@ class CatalogController < ApplicationController
     #    :years_25 => { :label => 'within 25 Years', :fq => "pub_date:[#{Time.now.year - 25 } TO *]" }
     # }
 
-    config.add_facet_field Settings.FIELDS.PROVENANCE, label: t('geoblacklight.home.institution'), limit: 8, partial: "icon_facet"
-    config.add_facet_field Settings.FIELDS.CREATOR, :label => t('geoblacklight.facets.author'), :limit => 8
-    config.add_facet_field Settings.FIELDS.PUBLISHER, :label => t('geoblacklight.facets.publisher'), :limit => 8
-    config.add_facet_field Settings.FIELDS.SUBJECT, :label => t('geoblacklight.facets.subject'), :limit => 8
-    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, :label => t('geoblacklight.facets.place'), :limit => 8
-    config.add_facet_field Settings.FIELDS.PART_OF, :label => t('geoblacklight.facets.collection'), :limit => 8
+    config.add_facet_field Settings.FIELDS.PROVENANCE, label: "Institution", limit: 8, partial: "icon_facet"
+    config.add_facet_field Settings.FIELDS.CREATOR, :label => "Author(s)", :limit => 8
+    config.add_facet_field Settings.FIELDS.PUBLISHER, :label => "Publisher", :limit => 8
+    config.add_facet_field Settings.FIELDS.SUBJECT, :label => "Subject(s)", :limit => 8
+    config.add_facet_field Settings.FIELDS.SPATIAL_COVERAGE, :label => "Place" :limit => 8
+    config.add_facet_field Settings.FIELDS.PART_OF, :label => "Collection", :limit => 8
 
     config.add_facet_field Settings.FIELDS.YEAR, :label => 'Year', :limit => 10
 
-    config.add_facet_field Settings.FIELDS.RIGHTS, label: t('geoblacklight.facets.access'), limit: 8, partial: "icon_facet"
-    config.add_facet_field Settings.FIELDS.GEOM_TYPE, label: t('geoblacklight.facets.data_type'), limit: 8, partial: "icon_facet"
-    config.add_facet_field Settings.FIELDS.FILE_FORMAT, :label => t('geoblacklight.facets.format'), :limit => 8
+    config.add_facet_field Settings.FIELDS.RIGHTS, label: "Access", limit: 8, partial: "icon_facet"
+    config.add_facet_field Settings.FIELDS.GEOM_TYPE, label: "Data Type", limit: 8, partial: "icon_facet"
+    config.add_facet_field Settings.FIELDS.FILE_FORMAT, :label => "Format", :limit => 8
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request

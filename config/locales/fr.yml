@@ -33,14 +33,18 @@ fr:
     search:
       fields:
         dc_creator_sm: 'Auteur(s)'
-        authors: 'Auteur(s)'
-        description: 'Description'
-        publisher: 'Éditeur'
-        collection: 'Collection'
-        places: 'Place(s)'
-        subjects: 'Subject(s)'
-        held_by: 'Détenu par'
-        data_source: 'Sources de données'
+        dc_publisher_sm: 'Établissement'
+        dct_issued_s: 'An(s)'
+        layer_geom_type_s: 'Type de données'
+        dc_rights_s: 'Accès'
+        dc_subject_sm: 'Sujet(s)'
+        dc_format_s: 'Format'
+        dct_isPartOf_sm: 'Collecte'
+        dc_description_s: 'Description'
+        dct_spatial_sm: 'Lieu'
+        dct_provenace_s: 'Détenu par'
+        dc_identifier_s: 'Sources de données'
+
 
   map:
     move_map_search: 'Rechercher lorsque je déplace la carte'

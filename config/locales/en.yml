@@ -55,15 +55,18 @@ en:
     search:
       fields:
         dc_creator_sm: 'Author(s)'
-        authors: 'Author(s)'
-        authors_display: 'Author(s)display'
-        description: 'Description'
-        publisher: 'Publisher'
-        collection: 'Collection'
-        places: 'Place(s)'
-        subjects: 'Subject(s)'
-        held_by: 'Held by'
-        data_source: 'Data source'
+        dc_publisher_sm: 'Institution(s)'
+        dct_issued_s: 'Year(s)'
+        layer_geom_type_s: 'Data Type'
+        dc_rights_s: 'Access'
+        dc_subject_sm: 'Subject(s)'
+        dc_format_s: 'Format'
+        dct_isPartOf_sm: 'Collection'
+        dc_description_s: 'Description'
+        dct_spatial_sm: 'Place'
+        dct_provenace_s: 'Institution'
+        dc_identifier_s: 'Data Source'
+
   map:
     move_map_search: 'Search when I move the map'
     redo_search: 'Redo search here'
