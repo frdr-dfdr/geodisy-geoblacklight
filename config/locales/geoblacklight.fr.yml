@@ -34,6 +34,7 @@ fr:
       about: 'À propos'
       about_uri: 'https://www.frdr-dfdr.ca/docs/fr/a_propos/#projet-geodisy'
       help: 'Aide'
+      help_uri: 'https://github.com/ubc-library/geodisy/blob/master/Documentation/userguides/FAQ-FR.md'
       frdr_logo: 'sitelogo_fr.png'
       language: 'FR'
       search_here: 'Faire une recherche ici'
@@ -48,7 +49,7 @@ fr:
       can_lib: 'Association des bibliothèques de recherche du Canada et Calcul Canada'
       cc_carl_priv: "Calcul Canada et l’ABRC respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
       priv: 'Politique de confidentialité'
-      priv_uri: 'https://www.frdr-dfdr.ca/docs/fr/a_propos/'
+      priv_uri: 'https://www.frdr-dfdr.ca/docs/fr/privacy_policy/'
       map_attrib: 'Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, RNCan, GeoBase, Kadaster NL, Ordnance Survey, Esri Japon, METI, Esri Chine (Hong Kong) et la communauté des utilisateurs de SIG'
     facets:
       author: "Auteur"
