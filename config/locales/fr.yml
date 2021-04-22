@@ -44,6 +44,7 @@ fr:
         dct_spatial_sm: 'Lieu'
         dct_provenace_s: 'Détenu par'
         dc_identifier_s: 'Sources de données'
+        dct_references_s: 'Sources de données'
 
 
   map:

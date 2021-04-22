@@ -64,8 +64,9 @@ en:
         dct_isPartOf_sm: 'Collection'
         dc_description_s: 'Description'
         dct_spatial_sm: 'Place'
-        dct_provenace_s: 'Institution'
+        dct_provenance_s: 'Institution'
         dc_identifier_s: 'Data Source'
+        dct_references_s: 'Data Source'
 
   map:
     move_map_search: 'Search when I move the map'
