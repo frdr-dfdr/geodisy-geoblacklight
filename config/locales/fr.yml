@@ -52,8 +52,8 @@ fr:
     redo_search: 'Refaire la recherche ici'
     search_here: 'Cherche ici'
   item:
-    read_more: 'French Read more'
-    close: 'French Close'
+    read_more: 'Lire plus'
+    close: 'Fermer'
   facets:
     authors: 'Auteur(s)'
     description: 'Description'
