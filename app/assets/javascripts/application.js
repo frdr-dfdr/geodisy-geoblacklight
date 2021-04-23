@@ -22,9 +22,7 @@
 //= require bootstrap
 //= require blacklight/blacklight
 
-//= require_tree .
 //= require i18n
 //= require i18n/translations
-
-
+//= require_tree .
 

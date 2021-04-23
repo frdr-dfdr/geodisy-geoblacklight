@@ -36,7 +36,7 @@
         History.pushState(null, document.title, this.getSearchUrl());
       },
       delay: 800,
-       staticButton: '<a class="redo btn-primary"><span class="glyphicon glyphicon-repeat"></span></a>',
+       staticButton: '<a class="redo btn btn-primary">'+I18n.t('map.redo_search')+'<span class="glyphicon glyphicon-repeat"></span></a>',
        dynamicButton: '<label class="move_map"><input type="checkbox" checked></label>'
     },
 

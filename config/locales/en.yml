@@ -1,4 +1,4 @@
-# Files in the config/locales directory are used for internationalization
+## Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
 #
@@ -72,6 +72,9 @@ en:
     move_map_search: 'Search when I move the map'
     redo_search: 'Redo search here'
     search_here: 'Search Here'
+  item:
+    read_more: 'Read more'
+    close: 'Close'
   facets:
     authors: 'Author(s)'
     description: 'Description'

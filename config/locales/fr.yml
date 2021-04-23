@@ -51,6 +51,9 @@ fr:
     move_map_search: 'Rechercher lorsque je déplace la carte'
     redo_search: 'Refaire la recherche ici'
     search_here: 'Cherche ici'
+  item:
+    read_more: 'French Read more'
+    close: 'French Close'
   facets:
     authors: 'Auteur(s)'
     description: 'Description'
