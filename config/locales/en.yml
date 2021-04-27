@@ -21,6 +21,8 @@
 
 en:
   blacklight:
+    
+    application_name: 'Geodisy'
     search_fields:
         all_fields: 'All fields'
         title: 'Title'
