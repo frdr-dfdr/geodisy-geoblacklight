@@ -55,6 +55,7 @@ fr:
       priv: 'Politique de confidentialité'
       priv_uri: 'https://www.frdr-dfdr.ca/docs/fr/privacy_policy/'
       map_attrib: 'Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, RNCan, GeoBase, Kadaster NL, Ordnance Survey, Esri Japon, METI, Esri Chine (Hong Kong) et la communauté des utilisateurs de SIG'
+      canarie: 'https://www.canarie.ca/fr/'
     facets:
       author: "Auteur"
       publisher: "Éditeur"
