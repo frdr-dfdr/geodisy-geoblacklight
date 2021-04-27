@@ -42,7 +42,7 @@ en:
       move_map: 'Move the map to display your area of interest. You can also hold the shift key and click to draw a box for the map to zoom toward'
       click: 'Click'
       results: 'to see the results'
-      frdr: 'https://www.frdr-dfdr.com'
+      frdr: 'https://www.frdr-dfdr.ca'
       cc: 'https://www.computecanada.ca'
       portage: 'https://portagenetwork.ca/'
       carl: 'https://www.carl-abrc.ca/'
