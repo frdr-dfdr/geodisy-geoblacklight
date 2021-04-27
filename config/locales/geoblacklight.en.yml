@@ -46,7 +46,8 @@ en:
       cc: 'https://www.computecanada.ca'
       portage: 'https://portagenetwork.ca/'
       carl: 'https://www.carl-abrc.ca/'
-
+      important: 'Geodisy provides map search functionality to supplement the FRDR discovery service. Currently in beta, the map search includes datasets from repositories indexed by FRDR with bounding box metadata. Dataverse repository datasets with location metadata and/or geospatial files are also included. Geodisy is only available in English at this time. To perform a text only search, return to '
+      important_url: 'https://frdr-dfdr.ca/'
       can_lib: 'Canadian Association of Research Libraries & Compute Canada'
       cc_carl_priv: 'Compute Canada and CARL respect the privacy of individuals and will only collect, use, and disclose Personal Information in keeping with information access and privacy law.'
       priv: 'Privacy Policy'
