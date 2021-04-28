@@ -55,6 +55,7 @@ en:
       priv: 'Privacy Policy'
       priv_uri: 'https://www.frdr-dfdr.ca/docs/en/privacy_policy/'
       map_attrib: 'Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+      map_attrib_num: '(1)'
       canarie: 'https://www.canarie.ca/'
     facets:
       author: 'Author'
