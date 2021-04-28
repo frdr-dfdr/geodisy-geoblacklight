@@ -34,7 +34,7 @@ fr:
       about: 'À propos'
       about_uri: 'https://www.frdr-dfdr.ca/docs/fr/a_propos/#projet-geodisy'
       help: 'Aide'
-      help_uri: 'https://github.com/ubc-library/geodisy/blob/master/Documentation/userguides/FAQ-FR.md'
+      help_uri: 'https://github.com/ubc-library/geodisy/blob/master/Documentation/FRDR/Aide.md'
       frdr_logo: 'sitelogo_fr.png'
       language: 'FR'
       search_here: 'Faire une recherche ici'
