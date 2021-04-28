@@ -8,9 +8,9 @@ fr:
       subject: 'Sujet'
       sort:
         relevancy: 'relevance'
-        pub_date: 'date de publication'
-        title: 'titre'
-        author: 'auteur'
+        solr_year_i: 'date de publication'
+        dc_title_s: 'titre'
+        dc_publisher_s: 'Établissement'
       title_display: 'Titre'
       title_vern_display: 'Titre'
       author_display: 'Auteur'

@@ -30,9 +30,9 @@ en:
         subject: 'Subject'
         sort:
           relevancy: 'relevance'
-          pub_date: 'publication year'
-          title: 'title'
-          author: 'author'
+          solr_year_i: 'publication year'
+          dc_publisher_s: 'institution'
+          dc_title_s: 'title'
         title_display: 'Title'
         title_vern_display: 'Title'
         author_display: 'Author'

@@ -8,8 +8,8 @@ Blacklight.onLoad(function() {
     geoblacklight.map.addControl(L.control.geosearch({
       baseUrl: data.catalogPath,
       dynamic: false,
-      zoom: 8,
-      center: [40.737, -73.923],
+      zoom: 2,
+      center: [55.885798, -102.478689],
       searcher: function() {
         window.location.href = this.getSearchUrl();
       },
