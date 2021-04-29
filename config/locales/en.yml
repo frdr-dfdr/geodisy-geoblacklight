@@ -69,6 +69,13 @@ en:
         dct_provenance_s: 'Institution'
         dc_identifier_s: 'Data Source'
         dct_references_s: 'Data Source'
+        solr_year_i: 'publication year aaa'
+        dc_title_s: 'titleaaa'
+        sort:
+          score desc, dc_title_sort asc: 'relevance'
+          solr_year_i desc, dc_title_sort asc: 'year'
+          dc_publisher_s asc, dc_title_sort asc: 'publisher'
+          dc_title_sort asc: title
 
   map:
     move_map_search: 'Search when I move the map'

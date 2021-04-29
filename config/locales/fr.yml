@@ -46,7 +46,11 @@ fr:
         dct_provenace_s: 'Détenu par'
         dc_identifier_s: 'Sources de données'
         dct_references_s: 'Sources de données'
-
+        sort:
+          score desc, dc_title_sort asc: 'relevance'
+          solr_year_i desc, dc_title_sort asc: 'date de publication'
+          dc_publisher_s asc, dc_title_sort asc: 'Établissement'
+          dc_title_sort asc: 'titre'
 
   map:
     move_map_search: 'Rechercher lorsque je déplace la carte'
