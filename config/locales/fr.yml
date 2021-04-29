@@ -49,7 +49,7 @@ fr:
         sort:
           score desc, dc_title_sort asc: 'relevance'
           solr_year_i desc, dc_title_sort asc: 'date de publication'
-          dc_publisher_s asc, dc_title_sort asc: 'Établissement'
+          dc_publisher_s asc, dc_title_sort asc: 'établissement'
           dc_title_sort asc: 'titre'
 
   map:
