@@ -9,7 +9,7 @@ Blacklight.onLoad(function() {
       baseUrl: data.catalogPath,
       dynamic: false,
       zoom: 2,
-      center: [55.885798, -102.478689],
+      center: [55.885798, -35.478689],
       searcher: function() {
         window.location.href = this.getSearchUrl();
       },
