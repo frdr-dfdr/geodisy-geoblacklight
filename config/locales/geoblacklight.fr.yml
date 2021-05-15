@@ -57,7 +57,7 @@ fr:
       map_attrib: ''
       map_attrib_num: ''
       canarie: 'https://www.canarie.ca/fr/'
-      warning: 'Geodisy rencontre actuellement un problème qui entraîne des enregistrements manquants et une fonctionnalité de prévisualisation géospatiale réduite. Nous prévoyons de corriger ce problème sous peu. Merci pour votre patience.'
+      warning: 'Geodisy connaît actuellement un problème qui entraîne des enregistrements manquants et une réduction de la fonctionnalité d’aperçu géospatial. Nous espérons pouvoir corriger ce problème sous peu. Nous vous remercions de votre patience.'
     facets:
       author: "Auteur"
       publisher: "Éditeur"
