@@ -1,6 +1,5 @@
 @import 'bootstrap';
-@import 'geodisy/geo_footer';
-@import 'geodisy/geo_beta';
+@import 'geodisy/geo_footer', 'geodisy/geo_beta';
 
 $logo-image: image_url('blacklight/geodisy.svg') !default
 
@@ -8,15 +7,6 @@ $logo-image: image_url('blacklight/geodisy.svg') !default
   @if $logo-image {
     background: transparent $logo-image no-repeat top left;
   }
-}
-
-#beta{
-	padding-left:10%;
-	padding-right:10%;
-}
-
-#betawarning{
- color:red;
 }
 
 #map_instructions{
