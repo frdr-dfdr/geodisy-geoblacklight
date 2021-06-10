@@ -156,7 +156,7 @@ fr:
       sort:
         label: "Trier par %{field}" # TODO: Remove during major release
         label_html: "Trier<span class=\"d-none d-sm-inline\"> par %{field}</span>"
-        submit: "trier les résultats"
+        submit: "trier par pertinence"
       form:
         search_field:
           label: "dans"

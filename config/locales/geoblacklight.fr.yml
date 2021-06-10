@@ -29,7 +29,7 @@ fr:
       data_type: 'Type de données'
       placename: 'Nom de lieu'
       subject: 'Sujet'
-      contact_us: 'Contactez nous'
+      contact_us: 'Contactez-nous'
       contact_us_uri: 'https://www.frdr-dfdr.ca/repo/contactus?locale=fr'
       about: 'À propos'
       about_uri: 'https://www.frdr-dfdr.ca/docs/fr/a_propos/#projet-geodisy'
@@ -38,20 +38,23 @@ fr:
       frdr_logo: 'sitelogo_fr.png'
       language: 'FR'
       search_here: 'Faire une recherche ici'
-      use_map: 'Pour utiliser la recherche cartographique:'
+      left_quote: '« '
+      right_quote: ' »'
+      use_map: 'Pour utiliser la recherche cartographique :'
       move_map: "Déplacez la carte pour afficher votre région d’intérêt. Vous pouvez également tenir la touche Majuscule enfoncée et cliquer pour encadrer une région sur la carte afin de l’agrandir."
       click: 'Cliquez sur'
       results: 'pour voir les résultats'
       frdr: 'https://www.frdr-dfdr.ca/repo/?locale=fr'
       cc: 'https://www.computecanada.ca/?lang=fr'
       portage: 'https://portagenetwork.ca/fr/'
-      important: 'Geodisy offre une fonction de recherche cartographique servant de complément au DFDR. Actuellement en version bêta, la recherche cartographique interroge des jeux de données provenant de dépôts indexés par le DFDR avec des métadonnées de cadre englobant. Des jeux de données du dépôt Dataverse assortis des métadonnées de localisation ou de fichiers géospatiaux sont également inclus. Pour effectuer une recherche texte seulement, retournez à '
+      important: 'Geodisy offre une fonction de recherche cartographique servant de complément au DFDR. La recherche cartographique interroge des jeux de données provenant de dépôts indexés par le DFDR avec des métadonnées de cadre englobant, des métadonnées de localisation, ou de fichiers géospatiaux. Pour effectuer une recherche texte seulement, retournez à '
+      colon: ' : '
       carl: 'https://www.carl-abrc.ca/fr/'
       ndrio: 'https://engagedri.ca/fr/'
       can_lib: 'Association des bibliothèques de recherche du Canada et Calcul Canada'
       ndrio_lib: 'Nouvelle organisation d’infrastructure de recherche numérique et Calcul Canada'
       cc_carl_priv: "Calcul Canada et l’ABRC respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
-      cc_ndrio_priv: "Calcul Canada et l’NOIRN respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
+      cc_ndrio_priv: "Calcul Canada et la NOIRN respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
       priv: 'Politique de confidentialité'
       priv_uri: "https://www.frdr-dfdr.ca/policies/fr/conditions_d'utilisation/"
       map_attrib: ''
@@ -200,7 +203,7 @@ fr:
       polyline: Polyligne (icon)
 
       princeton: Université Princeton
-      public: Contenu public
+      public: Contenu public (icon)
       purdue: Université Purdue
       raster: Trame (icon)
 
