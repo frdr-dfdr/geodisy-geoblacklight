@@ -21,7 +21,6 @@
 
 en:
   blacklight:
-    
     application_name: 'Geodisy'
     search_fields:
         all_fields: 'All fields'
@@ -31,8 +30,8 @@ en:
         sort:
           relevancy: 'relevance'
           solr_year_i: 'publication year'
-          dc_publisher_s: 'institution'
           dc_title_s: 'title'
+          dc_publisher_s: 'institution'
         title_display: 'Title'
         title_vern_display: 'Title'
         author_display: 'Author'
@@ -52,7 +51,7 @@ en:
         lc_1letter_facet: 'Call Number'
         subject_geo_facet: 'Region'
         subject_era_facet: 'Era'
-        example_pivot_field: 'Pivot Field'
+
         example_query_facet_field: 'Publish Date'
     search:
       fields:
@@ -69,8 +68,8 @@ en:
         dct_provenance_s: 'Institution'
         dc_identifier_s: 'Data Source'
         dct_references_s: 'Data Source'
-        solr_year_i: 'publication year aaa'
-        dc_title_s: 'titleaaa'
+
+        dc_title_s: 'title'
         sort:
           score desc, dc_title_sort asc: 'relevance'
           solr_year_i desc, dc_title_sort asc: 'year'

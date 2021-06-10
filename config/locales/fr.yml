@@ -30,6 +30,7 @@ fr:
       lc_1letter_facet: 'Cote'
       subject_geo_facet: 'Sujets géographiques'
       subject_era_facet: 'Couverture temporelle'
+      example_pivot_field: 'Pivot Field'
       example_query_facet_field: 'Date de publication'
     search:
       fields:
@@ -46,6 +47,8 @@ fr:
         dct_provenance_s: 'Institution '
         dc_identifier_s: 'Sources de données '
         dct_references_s: 'Sources de données '
+        solr_year_i: 'date de publication'
+        dc_title_s: 'titre'
         sort:
           score desc, dc_title_sort asc: 'relevance'
           solr_year_i desc, dc_title_sort asc: 'date de publication'
@@ -56,8 +59,8 @@ fr:
     move_map_search: 'Rechercher lorsque je déplace la carte'
     redo_search: 'Refaire la recherche ici'
     search_here: 'Cherche ici'
-      zoom_im: 'Zoom avant'
-      zoom_out: 'Zoom arrière'
+    zoom_im: 'Zoom avant'
+    zoom_out: 'Zoom arrière'
   item:
     read_more: 'Lire plus'
     close: 'Fermer'
@@ -70,4 +73,3 @@ fr:
     subjects: 'Subject(s)'
     held_by: 'Détenu par'
     data_source: 'Sources de données'
-
