@@ -47,7 +47,7 @@ fr:
       frdr: 'https://www.frdr-dfdr.ca/repo/?locale=fr'
       cc: 'https://www.computecanada.ca/?lang=fr'
       portage: 'https://portagenetwork.ca/fr/'
-      important: 'Geodisy offre une fonction de recherche cartographique servant de complément au DFDR. La recherche cartographique interroge des jeux de données provenant de dépôts indexés par le DFDR avec des métadonnées de cadre englobant, des métadonnées de localisation, ou de fichiers géospatiaux. Pour effectuer une recherche texte seulement, retournez à '
+      important: 'DFDR offre une fonction de recherche cartographique servant de complément au le texte service de découverte du DFDR. La recherche cartographique interroge des jeux de données provenant de dépôts indexés par le DFDR avec des métadonnées de cadre englobant, des métadonnées de localisation, ou de fichiers géospatiaux. Pour effectuer une recherche texte seulement, retournez à '
       colon: ' : '
       carl: 'https://www.carl-abrc.ca/fr/'
       ndrio: 'https://engagedri.ca/fr/'
