@@ -80,7 +80,7 @@ en:
     move_map_search: 'Search when I move the map'
     redo_search: 'Redo search here'
     search_here: 'Search Here'
-    zoom_im: 'Zoom in'
+    zoom_in: 'Zoom in'
     zoom_out: 'Zoom out'
   item:
     read_more: 'Read more'
