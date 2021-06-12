@@ -50,6 +50,7 @@ en:
       carl: 'https://www.carl-abrc.ca/'
       ndrio: 'https://engagedri.ca/'
       important: 'FRDR provides map search functionality to supplement the text-based FRDR discovery service. The map search includes datasets from repositories indexed by FRDR with bounding box metadata, location metadata, and/or geospatial files. To perform a text only search, return to '
+      important_num : '(2)'
       colon: ': '
       can_lib: 'Canadian Association of Research Libraries & Compute Canada'
       ndrio_lib: 'New Digital Rearch Infrastucture Organization & Compute Canada'
