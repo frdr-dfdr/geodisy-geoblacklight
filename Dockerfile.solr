@@ -1,10 +1,12 @@
 FROM solr:8.3.1 
 LABEL maintainer="Joel Farthing <joel.farthing@usask.ca>"
 
-USER solr:solr
-
-# Download JTS Topology library:
+# Download JTS Topology library
+USER root:root
 ADD https://repo1.maven.org/maven2/org/locationtech/jts/jts-core/1.18.2/jts-core-1.18.2.jar /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/
+RUN chmod 0644 /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/jts-core-1.18.2.jar
+
+USER solr:solr
 
 ENV CONF_SETS /opt/solr/server/solr/configsets
 
