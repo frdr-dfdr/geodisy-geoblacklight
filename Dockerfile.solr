@@ -3,6 +3,9 @@ LABEL maintainer="Joel Farthing <joel.farthing@usask.ca>"
 
 USER solr:solr
 
+# Download JTS Topology library:
+ADD https://repo1.maven.org/maven2/org/locationtech/jts/jts-core/1.18.2/jts-core-1.18.2.jar /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/
+
 ENV CONF_SETS /opt/solr/server/solr/configsets
 
 # Copy the Solr /conf from the GeoBlacklight repo
