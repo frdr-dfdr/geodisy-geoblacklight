@@ -4,9 +4,8 @@ on:
   push:
     # Publish `master` as Docker `latest` image.
     branches:
-        #- master
+      - master
       - docker
-      - RDM-4963-Solr-JTS-Topology
 
     # Publish `v1.2.3` tags as releases.
     tags:
