@@ -27,10 +27,10 @@ COPY ./Gemfile* /usr/src/
 
 RUN gem install bundler -v 2.2.0.rc.2
 
-RUN bundle install --trace
+RUN bundle install
 
 COPY . /usr/src
-RUN bundle exec rake assets:precompile
+RUN bundle exec rake assets:precompile --trace
 
 RUN yarn install --check-files
 
