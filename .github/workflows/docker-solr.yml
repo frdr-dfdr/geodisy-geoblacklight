@@ -1,4 +1,4 @@
-name: Geoblacklight-Solr
+name: Build Solr Docker Image for Geoblacklight
 
 on:
   push:
