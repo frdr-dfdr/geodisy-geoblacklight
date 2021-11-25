@@ -63,7 +63,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'blacklight', '~> 7.0'
-gem 'geoblacklight', '2.0', :source => 'https://github.com/frdr-dfdr/geoblacklight'
+gem 'geoblacklight', '2.0', :source => 'http://github.com/frdr-dfdr/geoblacklight.git'
 gem 'webpacker'
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
