@@ -27,7 +27,7 @@ COPY ./Gemfile* /usr/src/
 
 RUN gem install bundler -v 2.2.0.rc.2
 
-RUN bundle install
+RUN bundle install --trace
 
 COPY . /usr/src
 RUN bundle exec rake assets:precompile
