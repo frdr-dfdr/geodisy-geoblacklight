@@ -1,5 +1,5 @@
 # Ruby base image
-FROM ruby:2.6
+FROM ruby:2.7.5
 
 LABEL maintainer="joel.farthing@usask.ca"
 

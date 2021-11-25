@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.9'
+ruby '2.7.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4.5'
@@ -63,7 +63,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'blacklight', '~> 7.0'
-gem 'geoblacklight', :git => 'http://github.com/frdr-dfdr/geoblacklight', :tag => 'v2.4.0'
+gem 'geoblacklight', :git => 'http://github.com/frdr-dfdr/geoblacklight', :tag => 'v2.4.1'
 gem 'webpacker'
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
