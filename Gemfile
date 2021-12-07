@@ -74,7 +74,7 @@ gem 'bootstrap', '~> 4.0'
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'jquery-rails'
 gem 'devise'
-gem 'devise-guests', '~> 0.6'
+gem 'devise-guests', '~> 0.7.0'
 
 # CANARIE metrics reporting by VM
 gem 'grape'
