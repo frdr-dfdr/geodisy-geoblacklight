@@ -1,7 +1,7 @@
 # Ruby base image
 FROM ruby:2.7.5
 
-LABEL maintainer="joel.farthing@usask.ca"
+LABEL maintainer="developers@frdr.ca"
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
