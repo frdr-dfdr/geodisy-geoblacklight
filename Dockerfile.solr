@@ -1,5 +1,5 @@
 FROM solr:8.3.1 
-LABEL maintainer="Joel Farthing <joel.farthing@usask.ca>"
+LABEL maintainer="developers@frdr.ca"
 
 # Download JTS Topology library
 USER root:root
@@ -12,5 +12,7 @@ ENV CONF_SETS /opt/solr/server/solr/configsets
 
 # Copy the Solr /conf from the GeoBlacklight repo
 COPY --chown=solr:solr ./solr/conf ${CONF_SETS}/geoblacklight/conf
+
+COPY --chown=solr:solr ./solr/log4j2.xml /var/solr/log4j2.xml
 
 CMD ["solr","start","-f"]
