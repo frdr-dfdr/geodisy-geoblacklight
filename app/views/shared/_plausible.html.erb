@@ -1,0 +1,8 @@
+  <script>
+      var p_script = document.createElement("script");
+      p_script.src = "/stats/js/script.js";
+      p_script.setAttribute("data-api", "/stats/api/event");
+      p_script.setAttribute("data-domain", "<%= ENV.fetch("STATS_DOMAIN") %>");
+      p_script.setAttribute("defer", "");
+      document.write(p_script.outerHTML);
+  </script>
