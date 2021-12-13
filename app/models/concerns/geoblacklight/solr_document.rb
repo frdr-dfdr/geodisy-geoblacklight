@@ -64,6 +64,7 @@ module Geoblacklight
 
     def holding_institute
         fetch(Settings.FIELDS.PROVENANCE, '')
+    end
 
     def item_viewer
       ItemViewer.new(references)
