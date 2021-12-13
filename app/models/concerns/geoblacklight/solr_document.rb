@@ -63,7 +63,7 @@ module Geoblacklight
     end
 
     def holding_institute
-        fetch(Settings.FIELDS.PROVENANCE, '')
+        fetch(Settings.FIELDS.PROVENANCE)
     end
 
     def item_viewer
