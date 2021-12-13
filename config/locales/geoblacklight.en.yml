@@ -78,7 +78,7 @@ en:
       open_carto: 'Open in Carto'
       open_arcgis: 'Open in ArcGIS Online'
       access_data: 'Access the data'
-      explore: 'Explore at %{holding_institute}'
+      explore: 'Explore at '
 
     formats:
       arcgrid: 'ArcGRID'
