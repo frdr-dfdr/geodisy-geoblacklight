@@ -6,9 +6,11 @@
           <%= t('geoblackligh.tools.access_data') %>
         </div>
         <ul class="list-group list-group-flush">
-            <%= link_to document.external_url do %>
-                <%= t('geoblacklight.tools.explore') %><%= document.holding_institute %>
-            <% end %>
+            <li class="list-group-item>
+                <%= link_to document.external_url do %>
+                    <%= t('geoblacklight.tools.explore') %><%= document.holding_institute %>
+                <% end %>
+            </li>
         </ul>
     </div>
 <% end %>
