@@ -5,8 +5,10 @@
         <div class="card-header">
           <%= t('geoblackligh.tools.access_data') %>
         </div>
-        <%= link_to document.external_url do %>
-            <%= t('geoblacklight.tools.explore') %><%= document.holding_institute %>
-        <% end %>
+        <ul class="list-group list-group-flush">
+            <%= link_to document.external_url do %>
+                <%= t('geoblacklight.tools.explore') %><%= document.holding_institute %>
+            <% end %>
+        </ul>
     </div>
 <% end %>
