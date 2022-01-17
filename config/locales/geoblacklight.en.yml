@@ -77,6 +77,8 @@ en:
       login_to_view: 'Login to View and Download'
       open_carto: 'Open in Carto'
       open_arcgis: 'Open in ArcGIS Online'
+      access_data: 'Access the data'
+      explore: 'Explore at '
 
     formats:
       arcgrid: 'ArcGRID'
