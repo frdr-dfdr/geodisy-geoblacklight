@@ -65,7 +65,7 @@ en:
         dct_isPartOf_sm: 'Collection'
         dc_description_s: 'Description'
         dct_spatial_sm: 'Place'
-        dct_provenance_s: 'Institution'
+        dct_provenance_s: 'Source Repository'
         dc_identifier_s: 'Data Source'
         dct_references_s: 'Data Source'
 
