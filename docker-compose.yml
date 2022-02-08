@@ -1,11 +1,11 @@
 version: '3'
 volumes:
   solr_data_vol:
-  db_data_vol:
+    # db_data_vol:
   geoblacklight_data_vol:
   geoblacklight_static_assets_vol:
   geoserver_data_vol:
-  postgis_data_vol:
+    #postgis_data_vol:
 
 services:
   geoblacklight:
@@ -15,17 +15,13 @@ services:
       RAILS_LOG_TO_STDOUT: "true"
       SECRET_KEY_BASE: "not_a_secret"
       SOLR_URL: http://solr:8983/solr/geoblacklight
-      GEOBLACKLIGHT_POSTGRES_USER: postgres
-      GEOBLACKLIGHT_POSTGRES_PASSWORD: postgres
-      GEOBLACKLIGHT_POSTGRES_HOST: db
-      GEOBLACKLIGHT_POSTGRES_PORT: 5432
     volumes:
         #- geoblacklight_data_vol:/usr/src/app 
       - geoblacklight_static_assets_vol:/usr/src/public
     ports:
       - "3000:3000"
     depends_on:
-      - db
+      #      - db
       - solr
 
         #  geocombine:
@@ -48,15 +44,15 @@ services:
     ports:
       - "8983:8983"
 
-  db:
-    image: postgres:12
-    volumes:
-      - db_data_vol:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-    ports:
-      - "5432:5432"
+        #  db:
+        #    image: postgres:12
+        #    volumes:
+        #      - db_data_vol:/var/lib/postgresql/data
+        #    environment:
+        #      POSTGRES_USER: postgres
+        #      POSTGRES_PASSWORD: postgres
+        #    ports:
+        #      - "5432:5432"
 
   geoserver:
     image: kartoza/geoserver
@@ -69,14 +65,14 @@ services:
     ports:
       - "8600:8080"
   
-  postgis:
-    image: kartoza/postgis
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASS: postgres
-      POSTGRES_DB: vectordata
-    volumes:
-      - postgis_data_vol:/var/lib/postgresql/data
+        #  postgis:
+        #    image: kartoza/postgis
+        #    environment:
+        #      POSTGRES_USER: postgres
+        #      POSTGRES_PASS: postgres
+        #      POSTGRES_DB: vectordata
+        #    volumes:
+        #      - postgis_data_vol:/var/lib/postgresql/data
   
   nginx:
     image: nginx:1.19
