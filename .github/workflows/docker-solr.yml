@@ -1,10 +1,11 @@
-name: Geoblacklight-Solr
+name: Build Solr Docker Image for Geoblacklight
 
 on:
   push:
     # Publish `master` as Docker `latest` image.
     branches:
-      - master
+      - main
+      - docker
 
     # Publish `v1.2.3` tags as releases.
     tags:

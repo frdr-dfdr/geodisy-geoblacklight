@@ -1,10 +1,10 @@
-name: Geoblacklight
+name: Build Geoblacklight Docker Image
 
 on:
   push:
-    # Publish `master` as Docker `latest` image.
+    # Publish `main` as Docker `latest` image.
     branches:
-      - '*'      
+      - '*'
 
     # Publish `v1.2.3` tags as releases.
     tags:
@@ -15,7 +15,7 @@ on:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: geodisy-geoblacklight
+  IMAGE_NAME: redesign-frontend
 
 jobs:
   # Run tests.
