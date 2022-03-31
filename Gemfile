@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '2.7.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4.5'
@@ -62,7 +62,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'blacklight', '~> 7.0'
+
+# Uncomment to use frdr's fork of geoblacklight. Not required, only for development of pull requests
+# gem 'geoblacklight', :git => 'http://github.com/frdr-dfdr/geoblacklight', :tag => 'v2.4.1'
+
 gem 'geoblacklight', '~> 2.0'
+
 gem 'webpacker'
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'

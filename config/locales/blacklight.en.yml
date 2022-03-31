@@ -77,7 +77,7 @@ en:
       save: 'save'
 
     tools:
-      title: 'Tools'
+      title: 'Download FRDR Metadata'
       citation: 'Cite'
       email: 'Email'
       sms: 'SMS This'

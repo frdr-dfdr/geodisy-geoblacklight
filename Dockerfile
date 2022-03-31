@@ -1,7 +1,7 @@
 # Ruby base image
-FROM ruby:2.7.2
+FROM ruby:2.7.5
 
-LABEL maintainer="joel.farthing@usask.ca"
+LABEL maintainer="developers@frdr.ca"
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
@@ -26,7 +26,7 @@ RUN gem install bundler -v 2.2.0.rc.2
 RUN bundle install
 
 COPY . /usr/src
-RUN bundle exec rake assets:precompile
+RUN bundle exec rake assets:precompile --trace
 
 RUN yarn install --check-files
 
