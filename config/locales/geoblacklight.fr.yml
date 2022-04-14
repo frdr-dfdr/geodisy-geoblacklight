@@ -45,16 +45,13 @@ fr:
       click: 'Cliquez sur'
       results: 'pour voir les résultats'
       frdr: 'https://www.frdr-dfdr.ca/repo/?locale=fr'
-      cc: 'https://www.computecanada.ca/?lang=fr'
-      portage: 'https://portagenetwork.ca/fr/'
+      alliance:
+        logo: 'alliance_logo_french-first.svg'
+        name: 'Alliance de recherche numérique du Canada'
+        url: 'https://alliancecan.ca/fr'
       important: 'DFDR offre une fonction de recherche cartographique servant de complément au le texte service de découverte du DFDR. La recherche cartographique interroge des jeux de données provenant de dépôts indexés par le DFDR avec des métadonnées de cadre englobant, des métadonnées de localisation, ou de fichiers géospatiaux. Pour effectuer une recherche texte seulement, retournez à '
       colon: ' : '
-      carl: 'https://www.carl-abrc.ca/fr/'
-      ndrio: 'https://engagedri.ca/fr/'
-      can_lib: 'Association des bibliothèques de recherche du Canada et Calcul Canada'
-      ndrio_lib: 'Nouvelle organisation d’infrastructure de recherche numérique et Calcul Canada'
-      cc_carl_priv: "Calcul Canada et l’ABRC respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
-      cc_ndrio_priv: "Calcul Canada et la NOIRN respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
+      disclaimer: "Alliance de recherche numérique du Canada respectent la vie privée des personnes et ne collecteront, n’utiliseront et ne divulgueront les renseignements personnels que dans le respect des lois sur l’accès à l’information et la protection de la vie privée."
       priv: 'Politique de confidentialité'
       priv_uri: "https://www.frdr-dfdr.ca/policies/fr/conditions_d'utilisation/"
       map_attrib: ''

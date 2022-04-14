@@ -4,8 +4,8 @@
         <ul>
             <li>
               <div id="geo-footer-img" class="span2">
-                <%= link_to t('geoblacklight.home.portage') do %>
-                  <%= image_tag "portage_logo.png", alt: "Portage", height: 45 %>
+                <%= link_to t('geoblacklight.home.alliance.url') do %>
+                  <%= image_tag t('geoblacklight.home.alliance.logo'), alt: t('geoblacklight.home.alliance.name'), height: 50 %>
                 <% end %>
               </div>
             </li>
@@ -23,28 +23,14 @@
                 <% end %>
               </div>
             </li>
-            <li>
-              <div id="geo-footer-img" class="span2">
-                <%= link_to t('geoblacklight.home.ndrio') do %>
-                  <%= image_tag "ndrio_logo.svg", alt: "Portage", height: 75 %>
-                <% end %>
-              </div>
-            </li>
-            <li>
-              <div id="geo-footer-img" class="span2">
-                <%= link_to t('geoblacklight.home.cc') do %>
-                  <%= image_tag "logo_cc_enfr.png", alt: "Compute Canada", height: 75 %>
-                <% end %>
-              </div>
-            </li>
         </ul>
         <div class="container">
             <div class="col-md-12" style="text-align:left;">
                 <footer id="footer-text">
                     <br>
-                    © 2017 - 2021 <%= t('geoblacklight.home.ndrio_lib') %>
+                    © 2017 - 2021 <%= t('geoblacklight.home.alliance.name') %>
                     <br>
-                    <%= t('geoblacklight.home.cc_ndrio_priv') %>
+                    <%= t('geoblacklight.home.disclaimer') %>
                     <br>
                     <ul>
                         <li><a href=<%= t('geoblacklight.home.priv_uri') %> target="_blank"><%= t('geoblacklight.home.priv') %></a></li>
